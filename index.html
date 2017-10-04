@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	 	<meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Germania+One" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+
+
+		<title>Trabia Garden Map</title> 
+	</head>
+
+	<body> 
+		<div class="page flex-column">
+			<main>
+				<div id="map"></div>
+			</main>
+			<footer class="flex-column">
+				<div>
+					With love - Made by <a href="http://www.inf.usi.ch/phd/gallidabino/" target="_blank">Fooly</a>
+				</div>
+			</footer>
+		</div>
+
+		<div id="style-selector-control" class="map-control">
+			<div id="feature-show-inputs">
+			  <input id="show-cities" data-type="city" type="checkbox" class="selector-control" checked="true">
+			  <label for="show-cities">Cities</label>
+			  <input id="show-missions" data-type="mission" type="checkbox" class="selector-control">
+			  <label for="show-missions">Missions</label>
+			  <input id="show-sectors" data-type="sector" type="checkbox" class="selector-control">
+			  <label for="show-sectors">Sectors</label>
+			</div>
+			<div class="style-characters-frame">
+				<div id="style-characters-open-close">
+					<b>Personaggi</b>
+					<i id="style-characters-open-close-icon" class="material-icons">arrow_drop_up</i>
+				</div>
+				<div id="style-characters-tab">
+				</div>
+			</div>
+		</div>
+
+		<div class="info-frame">
+			<div id="info-open-close">
+				<span>Opzioni</span>
+				<i id="info-open-close-icon" class="material-icons">arrow_drop_up</i>
+			</div>
+
+			<div id="info-tab" class="info flex-column">	
+				<img class="info-logo info-item" src="img/logo.png"/>
+				
+				<b id="info-title" class="info-item">Benvenuto nella mappa interattiva</b>
+				
+				<div class="info-picture info-item">
+					<img id="info-img" src="img/placeholder.jpg"/>
+				</div>
+				
+				<div id="info-description" class="info-item">
+					Clicca sulla mappa per ricevere informazioni aggintive e scoprirne i segreti!
+				</div>
+			</div>
+		</div>
+
+		<!-- Load geoJSON assets -->
+		<script type="text/javascript" src="geoJSON/cities.js"></script>
+		<script type="text/javascript" src="geoJSON/characters.js"></script>
+		<script type="text/javascript" src="geoJSON/missions.js"></script>
+		<script type="text/javascript" src="geoJSON/sectors.js"></script>
+		<!-- / Load geoJSON assets -->
+
+		<script type="text/javascript" src="scripts/helper_functions.js"></script>
+		<script type="text/javascript" src="scripts/script.js"></script>
+
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7_7aqQq5lNBHp4MhgE1tByETC0Z8S5qI&callback=initMap"
+    async defer></script>
+	</body>
+</html>
