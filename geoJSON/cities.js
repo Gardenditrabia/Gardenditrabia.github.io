@@ -27,6 +27,19 @@ var cities = {
         type: 'Point', 
         coordinates: [2.109375, 77.65534600967776]
       }
+    },{
+      type: 'Feature',
+      properties: {
+        featureType: "city",
+        name: "Balamb Town",
+        image: "",
+        icon: "img/icons/city2.png",
+        description: "<a href="http://trabia.forumfree.it/?t=59368965#entry483359142" target="_blank">Clicca per accedere alla pagina sul sito</a>"
+      },
+      geometry: {
+        type: 'Point', 
+        coordinates: [-32.607421875, 71.58053179556501]
+      }
     },
   ]
 };
