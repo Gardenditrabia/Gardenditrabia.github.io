@@ -34,7 +34,7 @@ var cities = {
         name: "Balamb Town",
         image: "",
         icon: "img/icons/city2.png",
-        description: "<a href="http://trabia.forumfree.it/?t=59368965#entry483359142" target="_blank">Clicca per accedere alla pagina sul sito</a>"
+        description: `<a href="http://trabia.forumfree.it/?t=59368965#entry483359142" target="_blank">Clicca per accedere alla pagina sul sito</a>`
       },
       geometry: {
         type: 'Point', 
