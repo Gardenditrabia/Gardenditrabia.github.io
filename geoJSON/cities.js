@@ -40,7 +40,7 @@ var cities = {
         type: 'Point', 
         coordinates: [-32.607421875, 71.58053179556501]
       }
-    }, {
+    },{
       type: 'Feature',
       properties: {
         featureType: "city",
