@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	 	<meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+
+		<title>Trabia Garden Editor</title> 
+
+		<style>
+			label {
+				margin-right: 10px;
+			}
+		</style>
+	</head>
+
+	<body onload="load()"> 
+		<div>
+			<input id="select-cities" data-type="cities" type="radio" name="view-json" checked="true">
+		  <label for="select-cities">Cities</label>
+
+		  <input id="select-missions" data-type="missions" type="radio" name="view-json">
+		  <label for="select-missions">Missions</label>
+
+		  <input id="select-sectors" data-type="sectors" type="radio" name="view-json">
+		  <label for="select-sectors">Sectors</label>
+
+		  <input id="select-characters" data-type="characters" type="radio" name="view-json">
+		  <label for="select-characters">Chracters</label>
+		</div>
+
+		<hr>
+			<button id="add-button">+ Aggiungi</button>
+		<hr>
+			<textarea id="copy-paste"></textarea>
+		<hr>
+
+		<div id="show-data">
+
+		</div>
+
+
+		<!-- Load geoJSON assets -->
+		<script type="text/javascript" src="geoJSON/cities.js"></script>
+		<script type="text/javascript" src="geoJSON/characters.js"></script>
+		<script type="text/javascript" src="geoJSON/missions.js"></script>
+		<script type="text/javascript" src="geoJSON/sectors.js"></script>
+		<!-- / Load geoJSON assets -->
+
+		<script type="text/javascript" src="scripts/editor.js"></script>
+	</body>
+</html>
