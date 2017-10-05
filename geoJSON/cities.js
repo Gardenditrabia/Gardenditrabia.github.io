@@ -181,7 +181,7 @@ var cities = {
 },
       geometry: {
         type: 'Point', 
-        coordinates: [-100.810546875, 73.12494524712693]
+        coordinates: [-77.16796875, 72.10094360009954]
       }
       }
    
