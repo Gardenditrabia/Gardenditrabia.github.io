@@ -68,7 +68,7 @@ const loadGeoJSON = function(toLoad) {
 
 	container.innerHTML = acc
 
-	copyPaste.value = JSON.stringify(window[toLoad])
+	copyPaste.value = 'var ' + toLoad + ' = ' + JSON.stringify(window[toLoad])
 }
 
 const inputChange = function(obj, position, cat, property) {
@@ -80,7 +80,7 @@ const inputChange = function(obj, position, cat, property) {
 		window[obj].features[position][cat][property] = JSON.parse(el.value)
 	}
 
-	copyPaste.value = JSON.stringify(window[getChecked()])
+	copyPaste.value = 'var ' + getChecked() + ' = ' + JSON.stringify(window[getChecked()])
 }
 
 const addItem = function(){
