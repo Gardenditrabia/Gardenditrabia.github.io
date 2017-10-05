@@ -125,7 +125,7 @@ var cities = {
         name: "Lindblum",
         image: "",
         icon: "img/icons/city2.png",
-        description:`  <a href="http://trabia.forumfree.it/?t=59368965#entry613543997" target="_blank">Città di spicco nel periodo precedente alla guerra di Artemisia, Lindblum è una città marittima che fa fatica a rimanere al passo dei tempi con il resto della regione. E' stato un importante porto e punto di scalo per i rifornimenti balistici, grazie anche alla minera di damasco qui presente.`
+        description:`  <a href="http://trabia.forumfree.it/?t=59368965#entry613543997" target="_blank">Clicca per accedere alla pagina sul sito </a> Città di spicco nel periodo precedente alla guerra di Artemisia, Lindblum è una città marittima che fa fatica a rimanere al passo dei tempi con il resto della regione. E' stato un importante porto e punto di scalo per i rifornimenti balistici, grazie anche alla minera di damasco qui presente.`
       },
       geometry: {
         type: 'Point', 
