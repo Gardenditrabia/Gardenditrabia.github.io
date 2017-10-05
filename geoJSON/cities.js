@@ -131,6 +131,7 @@ var cities = {
         type: 'Point', 
         coordinates:  [23.73046875, 31.503629305773032]
       }
+      }
   ]
 };
 
