@@ -12,7 +12,7 @@ var cities = {
       },
       geometry: {
         type: 'Point', 
-        coordinates: [-18.80859375, 72.18180355624855]
+        coordinates: [-15.380859375, 73.32785809840698]
       }
     },{
       type: 'Feature',
@@ -77,7 +77,7 @@ var cities = {
       },
       geometry: {
         type: 'Point', 
-        coordinates: [-17.9296875, 80.23850054635392]
+        coordinates: [-21.62109375, 80.7323485464832]
       }
     },
 
