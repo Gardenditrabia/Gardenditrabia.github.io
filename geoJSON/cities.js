@@ -47,7 +47,7 @@ var cities = {
         name: "Timber",
         image: "img/cities/balbamb_garden.png",
         icon: "img/icons/city2.png",
-        description:` <a href="http://trabia.forumfree.it/?t=59368965#entry483386747" target="_blank">Clicca per accedere alla pagina sul sito</a> Timber è un polo ferroviario di rilevanza fondamentale - dalla sua stazione partono treni che raggiungono tutte le principali città mondiali. La sua importanza ha attratto in passato le brame di conquista di più di una Strega.`
+        description: `<a href="http://trabia.forumfree.it/?t=59368965#entry483386747" target="_blank">Clicca per accedere alla pagina sul sito</a> Timber è un polo ferroviario di rilevanza fondamentale - dalla sua stazione partono treni che raggiungono tutte le principali città mondiali. La sua importanza ha attratto in passato le brame di conquista di più di una Strega.`
       },
       geometry: {
         type: 'Point', 
@@ -60,7 +60,7 @@ var cities = {
         name: "Trabia Town",
         image: "",
         icon: "img/icons/city2.png",
-        description:` <a href="http://trabia.forumfree.it/?t=59368965#entry483188314" target="_blank">Clicca per accedere alla pagina sul sito</a> La fondazione della città, che risale a pochi anni dopo la fine della guerra della Strega Artemisia, ha causato la sparizione e l'incorporazione di numerosi piccoli centri abitati del continente di Trabia. Attualmente la città è un forte polo economico con molte possibilità di lavoro ed in cui la ricchezza è equamente distribuita tra la popolazione.`
+        description: `<a href="http://trabia.forumfree.it/?t=59368965#entry483188314" target="_blank">Clicca per accedere alla pagina sul sito</a> La fondazione della città, che risale a pochi anni dopo la fine della guerra della Strega Artemisia, ha causato la sparizione e l'incorporazione di numerosi piccoli centri abitati del continente di Trabia. Attualmente la città è un forte polo economico con molte possibilità di lavoro ed in cui la ricchezza è equamente distribuita tra la popolazione.`
       },
       geometry: {
         type: 'Point', 
@@ -73,7 +73,7 @@ var cities = {
         name: "Garden di Trabia",
         image: "",
         icon: "img/icons/city2.png",
-        description:` Dopo la sconfitta della Strega Artemisia è stata messa in moto una macchina economica per ricostruire il Garden di Trabia precedentemente distrutto dal famoso attacco missilistico da parte di Galbadia ai suoi danni. Il progetto - nato da Balamb e promosso dalla stessa Galbadia - ha messo nelle mani di Hector Mayer la nuova accademia SeeD. Alla sua morte, i figli Heimmerich ed Emily hanno preso le redini del Garden e portando avanti la guerra dei suoi SeeD - i Liberi Fatali - contro la Strega Astera. `
+        description: `Dopo la sconfitta della Strega Artemisia è stata messa in moto una macchina economica per ricostruire il Garden di Trabia precedentemente distrutto dal famoso attacco missilistico da parte di Galbadia ai suoi danni. Il progetto - nato da Balamb e promosso dalla stessa Galbadia - ha messo nelle mani di Hector Mayer la nuova accademia SeeD. Alla sua morte, i figli Heimmerich ed Emily hanno preso le redini del Garden e portando avanti la guerra dei suoi SeeD - i Liberi Fatali - contro la Strega Astera. `
       },
       geometry: {
         type: 'Point', 
