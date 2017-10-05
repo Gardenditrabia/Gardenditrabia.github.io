@@ -131,7 +131,60 @@ var cities = {
         type: 'Point', 
         coordinates:  [23.73046875, 31.503629305773032]
       }
+      },{
+      type: 'Feature',
+      properties: {
+        featureType: "city",
+        name: "Cittadella Perduta di Cleyra",
+        image: "",
+        icon: "img/icons/city2.png",
+        description:`  Avvolta in un tornado di sabbia che sembra non esaurirsi mai c'è una città. Gli strumenti dei velivoli vanno spesso in tilt quando si sorvola questa zona; è impossibile penetrare all'interno della perturbazione. Tuttavia, ci sono dicerie di viandanti che sono riusciti a vedere le meraviglie che si nascondono al suo interno.`
+      },
+      geometry: {
+        type: 'Point', 
+        coordinates: [-100.458984375, 63.78248603116502]
+              }
+                      },{
+      type: 'Feature',
+      properties: {
+        featureType: "city",
+        name: "Winhill",
+        image: "",
+        icon: "img/icons/city2.png",
+        description:`  <a href="http://trabia.forumfree.it/?t=59368965#entry483195261" target="_blank">Clicca per accedere alla pagina sul sito</a>  Piccola cittadina recentemente entrata nel conflitto dei Liberi Confini di Galbadia. E' stata vittima di diversi attacchi da parte della fazione di Wolfgang - ed è riuscita a difendersi grazie all'intervento del Cavalierato del Nuovo Ordine (C.N.O.) E' famosa per l'importanza che ha avuto nella vita di Laguna Loire, l'attuale Presidente di Esthar City e padre dell'eroe Squall Leonhart e per i numerosi allevamenti di Chocobo. `      
+},
+      geometry: {
+        type: 'Point', 
+        coordinates: [-94.04296875, 58.17070248348609]
       }
+                    },{
+                            type: 'Feature',
+      properties: {
+        featureType: "city",
+        name: "Deling City",
+        image: "",
+        icon: "img/icons/city2.png",
+        description:`  Capitale dello stato di Galbadia, Deling City è una città antica e ricca di storia. E' il cuore pulsante della regione galbadiana ed è per questo che durante gli anni in cui è rimasta conquistata prima dalla strega Artemisia e poi dalla strega Astera il continente ne ha sofferto molto. E' famosa la sua università, per le singole condizioni climatiche che la rendono perennemente coperta di nubi, e per i monumenti antichi.`      
+},
+      geometry: {
+        type: 'Point', 
+        coordinates: [-100.810546875, 73.12494524712693]
+      }
+                                                },{
+      type: 'Feature',
+      properties: {
+        featureType: "city",
+        name: "Garden di Galbadia",
+        image: "",
+        icon: "img/icons/city2.png",
+        description:`  Accademia dei SeeD Galbadiani la cui preside è attualmente Fujin, il comandante Frank Beast, ed il capitano Ted Hawkins. Insieme al Garden di Balamb si è messo in prima fila per la ricostruzione di quello di Trabia. Tutti i SeeD galbadiani hanno sofferto molto la guerra tanto di Artemisia quanto di Astera - il che li ha portati a considerare la soluzione estrema di avvalersi del Lunatic Pandora per bombardare Dollet, intento che è sfociato nella guerra tra Garden chiamata Lunawar. Dopo aver ristabilito i rapporti diplomatici, il Garden di Galbadia ha iniziato grandi collaborazioni con quello di Trabia per far procedere la guerra contro la Strega.`      
+},
+      geometry: {
+        type: 'Point', 
+        coordinates: [-100.810546875, 73.12494524712693]
+      }
+      }
+   
   ]
 };
 
