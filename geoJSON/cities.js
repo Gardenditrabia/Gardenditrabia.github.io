@@ -79,8 +79,58 @@ var cities = {
         type: 'Point', 
         coordinates: [-21.62109375, 80.7323485464832]
       }
-    },
-
+},{
+      type: 'Feature',
+      properties: {
+        featureType: "city",
+        name: "Fisherman's Horizon",
+        image: "",
+        icon: "img/icons/city2.png",
+        description:`  <a href="http://trabia.forumfree.it/?t=59368965#entry483334252" target="_blank">Clicca per accedere alla pagina sul sito</a> Questa città - che si trova al centro del grande ponte che collega i continenti di Esthar e Galbadia - è stata fondata durante il periodo di sviluppo di Esthar City da un gruppo di ingegneri che, insoddisfatti delle proprie condizioni lavorative, hanno deciso di lasciare la città. Si tratta di una città pacifica, neutrale, che non ha mai subito direttamente i fuochi della guerra.`
+      },
+      geometry: {
+        type: 'Point', 
+        coordinates: [-19.072265625, 62.79493487887006]
+      }
+        },{
+      type: 'Feature',
+      properties: {
+        featureType: "city",
+        name: "Esthar City",
+        image: "",
+        icon: "img/icons/city2.png",
+        description:`  <a href="http://trabia.forumfree.it/?t=59368965#entry483208953" target="_blank">Clicca per accedere alla pagina sul sito</a>  Leggenda vuole che questa città sia stata fondata dagli esuli di Centra riusciti a fuggire dal Pianto Lunare dello 0 P.L.C. Questa città è il più importante polo tecnologico mondiale ed è, insieme alle forze di Dollet e della Strega Astera, la più grande superpotenza mondiale. Esthar City è stata protagonista di numerose guerre ed eventi politici passati, ed attualmente segue una politica anti-Strega supportando, quando le è possibile, gli sforzi dei Garden per contrastare l'avanzata di Astera.`
+      },
+      geometry: {
+        type: 'Point', 
+        coordinates: [17.40234375, 57.844750992891]
+      }
+      },{
+      type: 'Feature',
+      properties: {
+        featureType: "city",
+        name: "Gracemeria",
+        image: "",
+        icon: "img/icons/city2.png",
+        description:`  <a href="http://trabia.forumfree.it/?t=59368965#entry483770748" target="_blank">Clicca per accedere alla pagina sul sito</a>  Città di recente fondazione come Trabia Town, si tratta di un progetto internazionale per la ri-colonizzazione del continente di Centra. Gli aiuti economici e tecnologici di Esthar City hanno reso esponenziale la sua crescita trasformandola in una città estremamente all'avanguardia. In seguito al colpo di stato del 102 PLC è caduta in mano alla Strega Aura ed ai suoi Cavalieri della Tavola Rotonda.`
+      },
+      geometry: {
+        type: 'Point', 
+        coordinates: [3.603515625, -2.108898659243126]
+}
+      },{
+      type: 'Feature',
+      properties: {
+        featureType: "city",
+        name: "Lindblum",
+        image: "",
+        icon: "img/icons/city2.png",
+        description:`  <a href="http://trabia.forumfree.it/?t=59368965#entry613543997" target="_blank">Città di spicco nel periodo precedente alla guerra di Artemisia, Lindblum è una città marittima che fa fatica a rimanere al passo dei tempi con il resto della regione. E' stato un importante porto e punto di scalo per i rifornimenti balistici, grazie anche alla minera di damasco qui presente.`
+      },
+      geometry: {
+        type: 'Point', 
+        coordinates:  [23.73046875, 31.503629305773032]
+      }
   ]
 };
 
