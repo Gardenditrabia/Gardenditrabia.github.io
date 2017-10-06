@@ -1,7 +1,6 @@
 const mapElement = document.getElementById('map')
 const infoTitle = document.getElementById('info-title')
 const infoImage = document.getElementById('info-img')
-const infoDescription = document.getElementById('info-description')
 const controllerViewFeature = document.getElementById('feature-show-inputs')
 const openCloseInfoButton = document.getElementById('info-open-close')
 const infoTab = document.getElementById('info-tab')
@@ -147,9 +146,16 @@ function initMap() {
 	map.data.addListener('click', function(event) {
     let type = event.feature.getProperty('featureType')
     if(type == "city" || type == "event" || type == "sector") {
-      infoTitle.innerHTML = event.feature.getProperty('name')
-      infoImage.src = event.feature.getProperty('image')
-      infoDescription.innerHTML = event.feature.getProperty('description')
+      let content = ""
+
+      content += event.feature.getProperty('description')
+
+      ssi_modal.show({
+        content: content,
+        sizeClass: 'small',
+        title: event.feature.getProperty('name'),
+        animation: true
+      }); 
     }
   });
 

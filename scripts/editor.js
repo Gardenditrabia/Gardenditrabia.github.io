@@ -9,6 +9,71 @@ const addButton = document.getElementById('add-button')
 
 const copyPaste = document.getElementById('copy-paste')
 
+window.citiesTemplate = {
+	type: 'Feature',
+	properties: {
+		featureType: "city",
+    name: "",
+    image: "",
+    icon: "img/icons/city2.png",
+    description: "",
+    url: "",
+	},
+	geometry: {
+		type: 'Point',
+		coordinates: []
+	}
+}
+
+window.missionsTemplate = {
+	type: 'Feature',
+	properties: {
+		featureType: "mission",
+    name: "",
+    image: "",
+    icon: "",
+    fillColor: "",
+    starFill: "",
+    description: ""
+	},
+	geometry: {
+		type: 'Point',
+		coordinates: []
+	}
+}
+
+window.sectorsTemplate = {
+	type: 'Feature',
+	properties: {
+		featureType: "sector",
+    name: "",
+    image: "",
+    description: "",
+    fillColor: "", 
+    strokeWidth: 3
+	},
+	geometry: {
+		type: 'Polygon',
+		coordinates: [[[1,2],[3,4],[4,5]]]
+	}
+}
+
+window.charactersTemplate = {
+	type: 'Feature',
+	properties: {
+		featureType: "character",
+    name: "",
+    grouep: "",
+    label: "",
+    fillColor: "",
+    textColor: "",
+	},
+	geometry: {
+		type: 'Point',
+		coordinates: []
+	}
+}
+
 
 const load = function() {
 	el1.addEventListener('click', onClick)
@@ -47,19 +112,19 @@ const loadGeoJSON = function(toLoad) {
 	let acc = "<div>"
 	let features = window[toLoad].features
 	for(let pos = 0; pos < features.length; pos++) {
-		for(let prop in features[pos].properties) {
+		for(let prop in window[toLoad + 'Template'].properties) {
 			if(prop != 'description') {
-				acc += `<div><label>${prop}</label><input id="${toLoad}-${pos}-properties-${prop}" onchange="inputChange('${toLoad}', ${pos}, 'properties', '${prop}')" type="text" value="${features[pos].properties[prop]}"></input></div>`
+				acc += `<div><label>${prop}:</label><input id="${toLoad}-${pos}-properties-${prop}" onchange="inputChange('${toLoad}', ${pos}, 'properties', '${prop}')" type="text" value="${features[pos].properties[prop]}"></input></div>`
 			} else {
-				acc += `<div><label>${prop}</label><textarea id="${toLoad}-${pos}-properties-${prop}" onchange="inputChange('${toLoad}', ${pos}, 'properties', '${prop}')" rows="4" cols="50">${features[pos].properties[prop]}</textarea></div>`
+				acc += `<div><label>${prop}:</label><textarea id="${toLoad}-${pos}-properties-${prop}" onchange="inputChange('${toLoad}', ${pos}, 'properties', '${prop}')" rows="4" cols="50">${features[pos].properties[prop]}</textarea></div>`
 			}
 		}
 
-		for(let prop in features[pos].geometry) {
+		for(let prop in window[toLoad + 'Template'].geometry) {
 			if(prop != 'coordinates') {
-				acc += `<div><label>${prop}</label><input id="${toLoad}-${pos}-geometry-${prop}" onchange="inputChange('${toLoad}', ${pos}, 'geometry', '${prop}')" type="text" value="${features[pos].geometry[prop]}"></input></div>`
+				acc += `<div><label>${prop}:</label><input id="${toLoad}-${pos}-geometry-${prop}" onchange="inputChange('${toLoad}', ${pos}, 'geometry', '${prop}')" type="text" value="${features[pos].geometry[prop]}"></input></div>`
 			} else {
-				acc += `<div><label>${prop}</label><textarea id="${toLoad}-${pos}-geometry-${prop}" onchange="inputChange('${toLoad}', ${pos}, 'geometry', '${prop}')" rows="4" cols="50">${JSON.stringify(features[pos].geometry[prop])}</textarea></div>`
+				acc += `<div><label>${prop}:</label><textarea id="${toLoad}-${pos}-geometry-${prop}" onchange="inputChange('${toLoad}', ${pos}, 'geometry', '${prop}')" rows="4" cols="50">${JSON.stringify(features[pos].geometry[prop])}</textarea></div>`
 			}
 		}
 
@@ -74,6 +139,8 @@ const loadGeoJSON = function(toLoad) {
 const inputChange = function(obj, position, cat, property) {
 	const el = document.getElementById(`${obj}-${position}-${cat}-${property}`)
 
+	console.log(obj)
+
 	if(property != 'coordinates') {
 		window[obj].features[position][cat][property] = el.value
 	} else {
@@ -84,73 +151,7 @@ const inputChange = function(obj, position, cat, property) {
 }
 
 const addItem = function(){
-	const toLoad = getChecked()
-
-	if(toLoad == 'cities') {
-		window[toLoad].features.unshift({
-			type: 'Feature',
-			properties: {
-				featureType: "city",
-	      name: "",
-	      image: "",
-	      icon: "img/icons/city2.png",
-	      description: ""
-			},
-			geometry: {
-				type: 'Point',
-				coordinates: []
-			}
-		})
-	} else if(toLoad == 'missions') {
-		window[toLoad].features.unshift({
-			type: 'Feature',
-			properties: {
-				featureType: "mission",
-	      name: "",
-	      image: "",
-	      icon: "",
-	      fillColor: "",
-        starFill: "",
-	      description: ""
-			},
-			geometry: {
-				type: 'Point',
-				coordinates: []
-			}
-		})
-	} else if(toLoad == 'sectors') {
-		window[toLoad].features.unshift({
-			type: 'Feature',
-			properties: {
-				featureType: "sector",
-	      name: "",
-	      image: "",
-	      description: "",
-	      fillColor: "", 
-        strokeWidth: 3
-			},
-			geometry: {
-				type: 'Polygon',
-				coordinates: [[[1,2],[3,4],[4,5]]]
-			}
-		})
-	} else if(toLoad == 'characters') {
-		window[toLoad].features.unshift({
-			type: 'Feature',
-			properties: {
-				featureType: "character",
-	      name: "",
-	      grouep: "",
-	      label: "",
-	      fillColor: "",
-        textColor: "",
-			},
-			geometry: {
-				type: 'Point',
-				coordinates: []
-			}
-		})
-	}
-
+	let toLoad = getChecked()
+	window[toLoad].features.unshift(objectAssignDeep({}, window[toLoad + 'Template']))
 	loadGeoJSON(toLoad)
 }

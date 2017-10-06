@@ -6,13 +6,13 @@
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-      
-		<link rel="stylesheet" href="css/style.css">
 
-		<link rel="stylesheet" href="bower_components/izimodal/css/iziModal.min.css">
 		<script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>		
-		<script src="bower_components/izimodal/js/iziModal.min.js" type="text/javascript"></script>
+		<script src="bower_components/ssi-modal/dist/ssi-modal/js/ssi-modal.js"></script>
+		<link rel="stylesheet" href="bower_components/ssi-modal/dist/ssi-modal/styles/ssi-modal.css"/> 
 
+		<link rel="stylesheet" href="css/style.css">
+		
 		<title>Trabia Garden Map</title> 
 	</head>
 
@@ -54,8 +54,14 @@
 			</div>
 
 			<div id="info-tab" class="info flex-column">	
-				<img class="info-logo info-item" src="img/logo.png"/>
-				
+				<a href="http://trabia.forumfree.it/" target="_blank">
+					<img class="info-logo info-item" src="img/logo.png"/>
+				</a>
+			</div>
+		</div>
+
+<!-- 		<div id="modal-info">
+			<div id="info-tab" class="info flex-column">	
 				<b id="info-title" class="info-item">Benvenuto nella mappa interattiva</b>
 				
 				<div class="info-picture info-item">
@@ -63,10 +69,10 @@
 				</div>
 				
 				<div id="info-description" class="info-item">
-					Clicca sulla mappa per ricevere informazioni aggintive e scoprirne i segreti!
+					Clicca sulla mappa per ricevere informazioni aggiuntive e scoprirne i segreti!
 				</div>
 			</div>
-		</div>
+		</div> -->
 
 		<!-- Load geoJSON assets -->
 		<script type="text/javascript" src="geoJSON/cities.js"></script>

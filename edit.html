@@ -7,14 +7,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/edit.css">
 
 		<title>Trabia Garden Editor</title> 
-
-		<style>
-			label {
-				margin-right: 10px;
-			}
-		</style>
 	</head>
 
 	<body onload="load()"> 
@@ -35,7 +30,8 @@
 		<hr>
 			<button id="add-button">+ Aggiungi</button>
 		<hr>
-			<textarea id="copy-paste"></textarea>
+			<textarea id="copy-paste" class="resize"></textarea>
+			<textarea id="" class="resize"></textarea>
 		<hr>
 
 		<div id="show-data">
@@ -50,6 +46,7 @@
 		<script type="text/javascript" src="geoJSON/sectors.js"></script>
 		<!-- / Load geoJSON assets -->
 
+		<script type="text/javascript" src="scripts/object_assign_deep.js"></script>
 		<script type="text/javascript" src="scripts/editor.js"></script>
 	</body>
 </html>

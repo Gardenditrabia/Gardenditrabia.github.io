@@ -187,6 +187,13 @@ footer a:hover {
 	transition: 0.5s;
 }
 
+.ssi-modalWindow {
+	border: 1px solid black;
+	background: #D5C5AE;
+	color: #302F2F;
+}
+
+
 
 @media (max-width: 754px) {
 	main {
