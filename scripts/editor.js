@@ -17,7 +17,33 @@ window.citiesTemplate = {
     image: "",
     icon: "img/icons/city2.png",
     description: "",
-    url: "",
+    info: {
+    	url: "",
+    	continente: "",
+    	superficie: "",
+    	abitanti: "",
+    	appellativo: "",
+    	c_porto: "",
+    	porto: "",
+    	c_ferrovie: "",
+    	ferrovie: "",
+    	c_aeroporto: "",
+    	aeroporto: "",
+    	c_metropolitana: "",
+    	metropolitana: "",
+    	c_pulizia: "",
+    	pulizia: "",
+    	c_criminalita: "",
+    	criminalita: "",
+    	c_tecnologia: "",
+    	tecnologia: "",
+    	politica: "",
+    	c_ricchezza: "",
+    	ricchezza: "",
+    	commercio: "",
+    	interesse: "",
+    	curiosita: []
+    }
 	},
 	geometry: {
 		type: 'Point',
@@ -113,9 +139,9 @@ const loadGeoJSON = function(toLoad) {
 	let features = window[toLoad].features
 	for(let pos = 0; pos < features.length; pos++) {
 		for(let prop in window[toLoad + 'Template'].properties) {
-			if(prop != 'description') {
+			if(prop != 'description' && prop != 'info') {
 				acc += `<div><label>${prop}:</label><input id="${toLoad}-${pos}-properties-${prop}" onchange="inputChange('${toLoad}', ${pos}, 'properties', '${prop}')" type="text" value="${features[pos].properties[prop]}"></input></div>`
-			} else {
+			} else if (prop != 'info') {
 				acc += `<div><label>${prop}:</label><textarea id="${toLoad}-${pos}-properties-${prop}" onchange="inputChange('${toLoad}', ${pos}, 'properties', '${prop}')" rows="4" cols="50">${features[pos].properties[prop]}</textarea></div>`
 			}
 		}
@@ -126,6 +152,25 @@ const loadGeoJSON = function(toLoad) {
 			} else {
 				acc += `<div><label>${prop}:</label><textarea id="${toLoad}-${pos}-geometry-${prop}" onchange="inputChange('${toLoad}', ${pos}, 'geometry', '${prop}')" rows="4" cols="50">${JSON.stringify(features[pos].geometry[prop])}</textarea></div>`
 			}
+		}
+
+		if(toLoad == 'cities') {
+			acc += `<button onclick="showHide('tab-${toLoad}-${pos}-properties-info')">Show / Hide </button><div id="tab-${toLoad}-${pos}-properties-info" style="display:none">`
+			for(let info in window[toLoad + 'Template'].properties.info) {
+				if(info != 'curiosita')
+				acc += `<div><label>${info}:</label><textarea id="${toLoad}-${pos}-properties-info-${info}" onchange="inputChange('${toLoad}', ${pos}, 'properties-info', '${info}')" rows="4" cols="50">${features[pos].properties.info[info]}</textarea></div>`
+			}
+
+			console.log()
+
+			acc += `<div id="tab-${toLoad}-${pos}-properties-info-curiosita">`
+			acc += `<button onclick="addCuriosity('${pos}')">Aggiungi curiosità</button>`
+			for(let i = 0; i < features[pos].properties.info.curiosita.length; i++) {
+				acc += `<div><label>${i}:</label><textarea id="${toLoad}-${pos}-properties-info-curiosita-${i}" onchange="inputChange('${toLoad}', ${pos}, 'properties-info-curiosita', '${i}')" rows="4" cols="50">${features[pos].properties.info.curiosita[i]}</textarea></div>`
+			}
+			acc += `</div>`
+
+			acc += `</div>`
 		}
 
 		acc += `</div><hr>`
@@ -139,9 +184,13 @@ const loadGeoJSON = function(toLoad) {
 const inputChange = function(obj, position, cat, property) {
 	const el = document.getElementById(`${obj}-${position}-${cat}-${property}`)
 
-	console.log(obj)
-
-	if(property != 'coordinates') {
+	if(cat.split("-").length == 3) {
+		let split = cat.split("-")
+		window[obj].features[position][split[0]][split[1][split[2]]][property] = el.value
+	} else if(cat.split("-").length == 2) {
+		let split = cat.split("-")
+		window[obj].features[position][split[0]][split[1]][property] = el.value
+	}else if(property != 'coordinates') {
 		window[obj].features[position][cat][property] = el.value
 	} else {
 		window[obj].features[position][cat][property] = JSON.parse(el.value)
@@ -150,8 +199,22 @@ const inputChange = function(obj, position, cat, property) {
 	copyPaste.value = 'var ' + getChecked() + ' = ' + JSON.stringify(window[getChecked()])
 }
 
+const showHide = function(id) {
+	const el = document.getElementById(id)
+	if(el.style.display === 'none') {
+		el.style.display = 'block'
+	} else {
+		el.style.display = 'none'
+	}
+}
+
 const addItem = function(){
 	let toLoad = getChecked()
 	window[toLoad].features.unshift(objectAssignDeep({}, window[toLoad + 'Template']))
 	loadGeoJSON(toLoad)
+}
+
+const addCuriosity = function(position) {
+	window.cities.features[position].properties.info.curiosita.push("")
+	loadGeoJSON('cities')
 }

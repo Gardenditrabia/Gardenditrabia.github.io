@@ -193,7 +193,13 @@ footer a:hover {
 	color: #302F2F;
 }
 
+.underline {
+	text-decoration: underline;
+}
 
+.description-info {
+	margin-top: 5px;
+}
 
 @media (max-width: 754px) {
 	main {

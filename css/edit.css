@@ -14,3 +14,7 @@
 #show-data input {
 	width: 400px;
 }
+
+#show-data textarea {
+	margin-top: 5px;
+}
