@@ -32,8 +32,8 @@ const show = urlParams.get('show')
 
 function initMap() {
   map = new google.maps.Map(mapElement, {
-    center: (initialCoordinatesCenter)?initialCoordinatesCenter:{lat: 78, lng: -33},
-    zoom: 4,
+    center: (initialCoordinatesCenter)?initialCoordinatesCenter:{lat: 62, lng: -42},
+    zoom: 3,
     streetViewControl: false,
     mapTypeControlOptions: {
       mapTypeIds: ['trabia']
