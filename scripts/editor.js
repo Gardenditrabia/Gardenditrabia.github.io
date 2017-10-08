@@ -57,9 +57,10 @@ window.missionsTemplate = {
 		featureType: "mission",
     name: "",
     image: "",
-    icon: "",
-    fillColor: "",
-    starFill: "",
+    url: "",
+    icon: "postal",
+    fillColor: "FFFFFF",
+    starFill: "CEC825",
     description: ""
 	},
 	geometry: {

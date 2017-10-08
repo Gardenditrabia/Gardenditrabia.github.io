@@ -145,7 +145,7 @@ function initMap() {
 
 	map.data.addListener('click', function(event) {
     let type = event.feature.getProperty('featureType')
-    if(type == "city" || type == "event" || type == "sector") {
+    if(type == "city" || type == "mission" || type == "sector") {
       let content = ""
 
       if(type == "city") {
@@ -340,9 +340,20 @@ function initMap() {
 
         content += `</div>`
 
-      } else if(type == "event" || type == "sector") {
+      } else if(type == "mission") {
+        if(event.feature.getProperty('url'))
+          content += `<a href="${event.feature.getProperty('url')}" target="_blank">Post sul forum</a><br><br>`
+
+        if(event.feature.getProperty('image')) 
+          content += `<div class="modal-image-container"><img class="modal-image" src="${event.feature.getProperty('image')}"/></div>`
+
+        content += event.feature.getProperty('description')
+      
+      } else if (type == "sector") {
+
         content += event.feature.getProperty('description')
       }
+
 
       ssi_modal.show({
         content: content,
