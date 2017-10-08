@@ -186,7 +186,7 @@ const inputChange = function(obj, position, cat, property) {
 
 	if(cat.split("-").length == 3) {
 		let split = cat.split("-")
-		window[obj].features[position][split[0]][split[1][split[2]]][property] = el.value
+		window[obj].features[position][split[0]][split[1]][split[2]][property] = el.value
 	} else if(cat.split("-").length == 2) {
 		let split = cat.split("-")
 		window[obj].features[position][split[0]][split[1]][property] = el.value
