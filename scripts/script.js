@@ -153,6 +153,9 @@ function initMap() {
         if(event.feature.getProperty('info').url)
           content += `<a href="${event.feature.getProperty('info').url}" target="_blank">Post sul forum</a><br><br>`
 
+        if(event.feature.getProperty('image')) 
+          content += `<div class="modal-image-container"><img class="modal-image" src="${event.feature.getProperty('image')}"/></div>`
+
         content += event.feature.getProperty('description')
         content += `<hr>`
 

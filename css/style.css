@@ -201,6 +201,15 @@ footer a:hover {
 	margin-top: 5px;
 }
 
+.modal-image-container {
+	text-align: center;
+}
+.modal-image {
+	width: 90%;
+	height: auto;
+	margin: auto;
+}
+
 @media (max-width: 754px) {
 	main {
 		flex-direction: column;
