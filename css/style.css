@@ -73,6 +73,10 @@ body {
 	height: auto;
 }
 
+.info-welcome {
+	margin: 20px;
+}
+
 #info-title {
 	width: 100%;
 	text-align: center;
