@@ -318,7 +318,6 @@ function initMap() {
         }
 
         // Punti di Interesse
-        console.log(event.feature.getProperty('info').interesse)
         if(event.feature.getProperty('info').interesse) {
           content += `<div class="description-info"><b>Punti di Interesse: </b> <br>`
 
