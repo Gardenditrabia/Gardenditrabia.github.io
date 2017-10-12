@@ -244,8 +244,6 @@ footer a:hover {
 	}
 
 	#map {
-		height: 400px;
-		width: 400px;
 		min-height: 50vh;
 	}
 	
