@@ -21,7 +21,7 @@ var missions = {
       type: 'Feature',
       properties: {
         featureType: "mission",
-        name: "Cicle of Suffering [ROMEO]",
+        name: "I want to go home [ROMEO]",
         image: "https://i.imgur.com/HcRu3bL.png",
         url: "http://trabia.forumfree.it/?t=74862164#entry613163447",
         description: `Qui Rebecca Neblin del laboratorio di ricerca esthariano della Venox Industries. Il problema è il seguente: il sogetto #AC001, a voi noto con il nome di Nyx, è scappato durante la notte. Stiamo ancora indagando come abbia fatto ad eludere la sorveglianza e a lasciare la struttura senza che nessuno se ne accorgesse, ma il come sia fuggito non è così rilevante al momento, ciò che mi spinge a richiedere la presenza di alcuni dei vostri membri è il fatto che all'esterno della struttura sono state trovate tracce recenti di mostri e di persone non identificate. Temiamo per l'incolumità del soggetto.`,
