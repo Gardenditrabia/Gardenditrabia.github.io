@@ -50,7 +50,7 @@ Maggiori dettagli ve li do qui sull'Arcadia: imbarcatevi da Fisherman's Horizon 
       },
       geometry: {
         type: 'Point', 
-        coordinates: [-51.328125, 75.32002523220804]
+        coordinates: [-4.04296875, 67.23806155909904]
       }
     }
   ]
