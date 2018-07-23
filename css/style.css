@@ -236,6 +236,18 @@ footer a:hover {
 	margin: auto;
 }
 
+.toast-bottom-center {
+  bottom: 30px;
+}
+
+.toast-info {
+  background-color: #000;
+}
+
+#toast-container > div {
+	opacity: 1;
+}
+
 @media (max-width: 754px) {
 	main {
 		webkit-flex-direction: column;

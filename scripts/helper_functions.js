@@ -45,33 +45,33 @@ function activateMarkerDisableOthers(map, controller) {
   }
 }
 
-function addCharactersToDOM(dom) {
-  const groups = {}
+// function addCharactersToDOM(dom) {
+//   const groups = {}
 
-  let chars = characters.features
-  for(let i = 0; i < chars.length; i++) {
-    let name = chars[i].properties.name
-    let groupName = chars[i].properties.group
-    if(groups[groupName]) {
-      groups[groupName].push(name)
-    } else {
-      groups[groupName] = [name]
-    }
-  }
+//   let chars = characters.features
+//   for(let i = 0; i < chars.length; i++) {
+//     let name = chars[i].properties.name
+//     let groupName = chars[i].properties.group
+//     if(groups[groupName]) {
+//       groups[groupName].push(name)
+//     } else {
+//       groups[groupName] = [name]
+//     }
+//   }
 
-  let toAdd = ""
-  for(let groupName in groups) {
-    let names = groups[groupName]
-    toAdd += `<div class="style-characters-group"><div class="style-characters-groupname">${groupName}</div>`
-    for(let i = 0; i < names.length; i++) {
-       toAdd += ` <div class="style-characters-input-label"><input id="show-character-${names[i]}" data-type="character" data-name="${names[i]}" type="checkbox" class="selector-control"><label for="show-character-${names[i]}" data-type="character" data-name="${names[i]}">${names[i]}</label></div>`
-    }
+//   let toAdd = ""
+//   for(let groupName in groups) {
+//     let names = groups[groupName]
+//     toAdd += `<div class="style-characters-group"><div class="style-characters-groupname">${groupName}</div>`
+//     for(let i = 0; i < names.length; i++) {
+//        toAdd += ` <div class="style-characters-input-label"><input id="show-character-${names[i]}" data-type="character" data-name="${names[i]}" type="checkbox" class="selector-control"><label for="show-character-${names[i]}" data-type="character" data-name="${names[i]}">${names[i]}</label></div>`
+//     }
 
-    toAdd += "</div>"
-  }
+//     toAdd += "</div>"
+//   }
 
-  dom.innerHTML = toAdd
-}
+//   dom.innerHTML = toAdd
+// }
 
 function showCharacter(map) {
   return function(event) {

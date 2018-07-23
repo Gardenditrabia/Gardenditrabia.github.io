@@ -4,13 +4,13 @@
 	 	<meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 		<script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>		
 		<script src="bower_components/ssi-modal/dist/ssi-modal/js/ssi-modal.js"></script>
+		<script src="bower_components/toastr/toastr.min.js"></script>
 		<link rel="stylesheet" href="bower_components/ssi-modal/dist/ssi-modal/styles/ssi-modal.css"/> 
-
+		<link rel="stylesheet" href="bower_components/toastr/toastr.css"/> 
 		<link rel="stylesheet" href="css/style.css">
 		
 		<title>Trabia Garden Map</title> 
@@ -30,24 +30,32 @@
 
 		<div id="style-selector-control" class="map-control">
 			<div id="feature-show-inputs">
-			  <input id="show-cities" data-type="city" type="checkbox" class="selector-control" checked="true">
-			  <label for="show-cities">Città</label>
-			  <input id="show-missions" data-type="mission" type="checkbox" class="selector-control">
-			  <label for="show-missions">Missioni</label>
-			  <input id="show-sectors" data-type="sector" type="checkbox" class="selector-control">
-			  <label for="show-sectors">Settori</label>
+			  <div>
+			  	<input id="show-cities" data-type="city" type="checkbox" class="selector-control" checked="true">
+			  	<label for="show-cities">Città</label>
+				</div>
+			<!--   <input id="show-missions" data-type="mission" type="checkbox" class="selector-control">
+			  <label for="show-missions">Missioni</label> -->
+			  <div>
+			  	<input id="show-sectors" data-type="sector" type="checkbox" class="selector-control">
+			  	<label for="show-sectors">Settori</label>
+			  </div>
+			  <!-- <div>
+			  	<input id="show-sectors" data-type="sector" type="checkbox" class="selector-control">
+			  	<label for="show-sectors">Politica</label>
+			  </div> -->
 			</div>
-			<div class="style-characters-frame">
+<!-- 			<div class="style-characters-frame">
 				<div id="style-characters-open-close">
 					<b>Personaggi</b>
 					<i id="style-characters-open-close-icon" class="material-icons">arrow_drop_up</i>
 				</div>
 				<div id="style-characters-tab">
 				</div>
-			</div>
+			</div> -->
 		</div>
 
-		<div class="info-frame">
+		<!-- <div class="info-frame">
 			<div id="info-open-close">
 				<span>Opzioni</span>
 				<i id="info-open-close-icon" class="material-icons">arrow_drop_up</i>
@@ -119,7 +127,7 @@
 					- Per accedere al channel Irc del Garden, seguire le istruzioni di <a href="http://trabia.forumfree.it/?t=34594812" target="_blank">questo topic</a>.
 				</div>
 			</div>
-		</div>
+		</div> -->
 
 <!-- 		<div id="modal-info">
 			<div id="info-tab" class="info flex-column">	

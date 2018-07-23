@@ -11,6 +11,24 @@ const styleCharactersOpenIcon = document.getElementById('style-characters-open-c
 
 let map = undefined
 
+toastr.options = {
+  "closeButton": false,
+  "debug": false,
+  "newestOnTop": false,
+  "progressBar": false,
+  "positionClass": "toast-bottom-center",
+  "preventDuplicates": false,
+  "onclick": null,
+  "showDuration": "300",
+  "hideDuration": "1000",
+  "timeOut": "0",
+  "extendedTimeOut": "0",
+  "showEasing": "swing",
+  "hideEasing": "linear",
+  "showMethod": "fadeIn",
+  "hideMethod": "fadeOut"
+}
+
 // CONFIGURATION
 // map bounds
 const mapBound = {
@@ -32,8 +50,8 @@ const show = urlParams.get('show')
 
 function initMap() {
   map = new google.maps.Map(mapElement, {
-    center: (initialCoordinatesCenter)?initialCoordinatesCenter:{lat: 62, lng: -42},
-    zoom: 3,
+    center: (initialCoordinatesCenter)?initialCoordinatesCenter:{lat: 75, lng: -42},
+    zoom: 8,
     streetViewControl: false,
     mapTypeControlOptions: {
       mapTypeIds: ['trabia']
@@ -143,229 +161,237 @@ function initMap() {
   map.data.addGeoJson(missions);
   map.data.addGeoJson(sectors);
 
-	map.data.addListener('click', function(event) {
-    let type = event.feature.getProperty('featureType')
-    if(type == "city" || type == "mission" || type == "sector") {
-      let content = ""
+  map.data.addListener("mouseover",function(event){
+    toastr.remove()
+    toastr.info(event.feature.getProperty('name'))
+  }); 
 
-      if(type == "city") {
-
-        if(event.feature.getProperty('info').url)
-          content += `<a href="${event.feature.getProperty('info').url}" target="_blank">Post sul forum</a><br><br>`
-
-        if(event.feature.getProperty('image')) 
-          content += `<div class="modal-image-container"><img class="modal-image" src="${event.feature.getProperty('image')}"/></div>`
-
-        content += event.feature.getProperty('description')
-        content += `<hr>`
-
-        content += `<div>`
-
-        // Continente
-        if(event.feature.getProperty('info').continente)
-          content += `<div class="description-info"><b>Continente: </b>${event.feature.getProperty('info').continente}</div>`
-
-        // Superficie
-        if(event.feature.getProperty('info').superficie)
-          content += `<div class="description-info"><b>Superficie: </b>${event.feature.getProperty('info').superficie}</div>`
-
-        // Abitanti
-        if(event.feature.getProperty('info').abitanti)
-          content += `<div class="description-info"><b>Abitanti: </b>${event.feature.getProperty('info').abitanti}</div>`
-
-        // Appellativo
-        if(event.feature.getProperty('info').appellativo)
-          content += `<div class="description-info"><b>Appellativo: </b>${event.feature.getProperty('info').appellativo}</div>`
-
-        // Porto
-        if(event.feature.getProperty('info').porto || event.feature.getProperty('info').c_porto) {
-          content += `<div class="description-info"><b>Porto: </b>`
-          if(event.feature.getProperty('info').c_porto) {
-            content += `<span class="underline">${event.feature.getProperty('info').c_porto}</span><br>`
-          } else {
-            content += `<br>`
-          }
-
-          if(event.feature.getProperty('info').porto) 
-            content += event.feature.getProperty('info').porto
-
-          content += `</div>`
-        }
-
-        // Ferrovie
-        if(event.feature.getProperty('info').ferrovie || event.feature.getProperty('info').c_ferrovie) {
-          content += `<div class="description-info"><b>Ferrovie: </b>`
-          if(event.feature.getProperty('info').c_ferrovie) {
-            content += `<span class="underline">${event.feature.getProperty('info').c_ferrovie}</span><br>`
-          } else {
-            content += `<br>`
-          }
-
-          if(event.feature.getProperty('info').ferrovie) 
-            content += event.feature.getProperty('info').ferrovie
-
-          content += `</div>`
-        }
-
-        // Aeroporto
-        if(event.feature.getProperty('info').aeroporto || event.feature.getProperty('info').c_aeroporto) {
-          content += `<div class="description-info"><b>Aeroporto: </b>`
-          if(event.feature.getProperty('info').c_aeroporto) {
-            content += `<span class="underline">${event.feature.getProperty('info').c_aeroporto}</span><br>`
-          } else {
-            content += `<br>`
-          }
-
-          if(event.feature.getProperty('info').aeroporto) 
-            content += event.feature.getProperty('info').aeroporto
-
-          content += `</div>`
-        }
-
-        // Metropolitana
-        if(event.feature.getProperty('info').metropolitana || event.feature.getProperty('info').c_metropolitana) {
-          content += `<div class="description-info"><b>Metropolitana: </b>`
-          if(event.feature.getProperty('info').c_metropolitana) {
-            content += `<span class="underline">${event.feature.getProperty('info').c_metropolitana}</span><br>`
-          } else {
-            content += `<br>`
-          }
-
-          if(event.feature.getProperty('info').metropolitana) 
-            content += event.feature.getProperty('info').metropolitana
-
-          content += `</div>`
-        }
-
-        // Pulizia
-        if(event.feature.getProperty('info').pulizia || event.feature.getProperty('info').c_pulizia) {
-          content += `<div class="description-info"><b>Pulizia: </b>`
-          if(event.feature.getProperty('info').c_pulizia) {
-            content += `<span class="underline">${event.feature.getProperty('info').c_pulizia}</span><br>`
-          } else {
-            content += `<br>`
-          }
-
-          if(event.feature.getProperty('info').pulizia) 
-            content += event.feature.getProperty('info').pulizia
-
-          content += `</div>`
-        }
-
-        // Criminalità
-        if(event.feature.getProperty('info').criminalita || event.feature.getProperty('info').c_criminalita) {
-          content += `<div class="description-info"><b>Criminalità: </b>`
-          if(event.feature.getProperty('info').c_criminalita) {
-            content += `<span class="underline">${event.feature.getProperty('info').c_criminalita}</span><br>`
-          } else {
-            content += `<br>`
-          }
-
-          if(event.feature.getProperty('info').criminalita) 
-            content += event.feature.getProperty('info').criminalita
-
-          content += `</div>`
-        }
-
-        // Tecnologia
-        if(event.feature.getProperty('info').tecnologia || event.feature.getProperty('info').c_tecnologia) {
-          content += `<div class="description-info"><b>Livello tecnologico: </b>`
-          if(event.feature.getProperty('info').c_tecnologia) {
-            content += `<span class="underline">${event.feature.getProperty('info').c_tecnologia}</span><br>`
-          } else {
-            content += `<br>`
-          }
-
-          if(event.feature.getProperty('info').tecnologia) 
-            content += event.feature.getProperty('info').tecnologia
-
-          content += `</div>`
-        }
-
-        // Ricchezza
-        if(event.feature.getProperty('info').ricchezza || event.feature.getProperty('info').c_ricchezza) {
-          content += `<div class="description-info"><b>Ricchezza: </b>`
-          if(event.feature.getProperty('info').c_ricchezza) {
-            content += `<span class="underline">${event.feature.getProperty('info').c_ricchezza}</span><br>`
-          } else {
-            content += `<br>`
-          }
-
-          if(event.feature.getProperty('info').ricchezza) 
-            content += event.feature.getProperty('info').ricchezza
-
-          content += `</div>`
-        }
-
-        // Personalità Politiche
-        if(event.feature.getProperty('info').politica) {
-          content += `<div class="description-info"><b>Personalità politiche: </b> <br>`
-
-          if(event.feature.getProperty('info').politica) 
-            content += event.feature.getProperty('info').politica
-
-          content += `</div>`
-        }
-
-        // Commercio
-        if(event.feature.getProperty('info').commercio) {
-          content += `<div class="description-info"><b>Commercio: </b> <br>`
-
-          if(event.feature.getProperty('info').commercio) 
-            content += event.feature.getProperty('info').commercio
-
-          content += `</div>`
-        }
-
-        // Punti di Interesse
-        if(event.feature.getProperty('info').interesse) {
-          content += `<div class="description-info"><b>Punti di Interesse: </b> <br>`
-
-          if(event.feature.getProperty('info').interesse) 
-            content += `<a href="${event.feature.getProperty('info').interesse}" target="_blank">Post sul forum</a>`
-
-          content += `</div>`
-        }
-
-        // Curiosità
-        if(event.feature.getProperty('info').curiosita.length > 0) {
-          content += `<div class="description-info"><b>Curiosità: </b> <br>`
-          
-          content += `<ol>`
-          for(let i = 0; i < event.feature.getProperty('info').curiosita.length; i++) {
-            content += `<li>${event.feature.getProperty('info').curiosita[i]}</li><br>`
-          }
-          content += `</ol></div>`
-        }
-
-        content += `</div>`
-
-      } else if(type == "mission") {
-        if(event.feature.getProperty('url'))
-          content += `<a href="${event.feature.getProperty('url')}" target="_blank">Post sul forum</a><br><br>`
-
-        if(event.feature.getProperty('image')) 
-          content += `<div class="modal-image-container"><img class="modal-image" src="${event.feature.getProperty('image')}"/></div>`
-
-        content += event.feature.getProperty('description')
-      
-      } else if (type == "sector") {
-
-        content += event.feature.getProperty('description')
-      }
-
-
-      ssi_modal.show({
-        content: content,
-        sizeClass: 'small',
-        title: event.feature.getProperty('name'),
-        animation: true
-      }); 
-    }
+  map.data.addListener("mouseout",function(event){
+   toastr.clear()
   });
 
+	// map.data.addListener('click', function(event) {
+ //    let type = event.feature.getProperty('featureType')
+ //    if(type == "city" || type == "mission" || type == "sector") {
+ //      let content = ""
+
+ //      if(type == "city") {
+
+ //        if(event.feature.getProperty('info').url)
+ //          content += `<a href="${event.feature.getProperty('info').url}" target="_blank">Post sul forum</a><br><br>`
+
+ //        if(event.feature.getProperty('image')) 
+ //          content += `<div class="modal-image-container"><img class="modal-image" src="${event.feature.getProperty('image')}"/></div>`
+
+ //        content += event.feature.getProperty('description')
+ //        content += `<hr>`
+
+ //        content += `<div>`
+
+ //        // Continente
+ //        if(event.feature.getProperty('info').continente)
+ //          content += `<div class="description-info"><b>Continente: </b>${event.feature.getProperty('info').continente}</div>`
+
+ //        // Superficie
+ //        if(event.feature.getProperty('info').superficie)
+ //          content += `<div class="description-info"><b>Superficie: </b>${event.feature.getProperty('info').superficie}</div>`
+
+ //        // Abitanti
+ //        if(event.feature.getProperty('info').abitanti)
+ //          content += `<div class="description-info"><b>Abitanti: </b>${event.feature.getProperty('info').abitanti}</div>`
+
+ //        // Appellativo
+ //        if(event.feature.getProperty('info').appellativo)
+ //          content += `<div class="description-info"><b>Appellativo: </b>${event.feature.getProperty('info').appellativo}</div>`
+
+ //        // Porto
+ //        if(event.feature.getProperty('info').porto || event.feature.getProperty('info').c_porto) {
+ //          content += `<div class="description-info"><b>Porto: </b>`
+ //          if(event.feature.getProperty('info').c_porto) {
+ //            content += `<span class="underline">${event.feature.getProperty('info').c_porto}</span><br>`
+ //          } else {
+ //            content += `<br>`
+ //          }
+
+ //          if(event.feature.getProperty('info').porto) 
+ //            content += event.feature.getProperty('info').porto
+
+ //          content += `</div>`
+ //        }
+
+ //        // Ferrovie
+ //        if(event.feature.getProperty('info').ferrovie || event.feature.getProperty('info').c_ferrovie) {
+ //          content += `<div class="description-info"><b>Ferrovie: </b>`
+ //          if(event.feature.getProperty('info').c_ferrovie) {
+ //            content += `<span class="underline">${event.feature.getProperty('info').c_ferrovie}</span><br>`
+ //          } else {
+ //            content += `<br>`
+ //          }
+
+ //          if(event.feature.getProperty('info').ferrovie) 
+ //            content += event.feature.getProperty('info').ferrovie
+
+ //          content += `</div>`
+ //        }
+
+ //        // Aeroporto
+ //        if(event.feature.getProperty('info').aeroporto || event.feature.getProperty('info').c_aeroporto) {
+ //          content += `<div class="description-info"><b>Aeroporto: </b>`
+ //          if(event.feature.getProperty('info').c_aeroporto) {
+ //            content += `<span class="underline">${event.feature.getProperty('info').c_aeroporto}</span><br>`
+ //          } else {
+ //            content += `<br>`
+ //          }
+
+ //          if(event.feature.getProperty('info').aeroporto) 
+ //            content += event.feature.getProperty('info').aeroporto
+
+ //          content += `</div>`
+ //        }
+
+ //        // Metropolitana
+ //        if(event.feature.getProperty('info').metropolitana || event.feature.getProperty('info').c_metropolitana) {
+ //          content += `<div class="description-info"><b>Metropolitana: </b>`
+ //          if(event.feature.getProperty('info').c_metropolitana) {
+ //            content += `<span class="underline">${event.feature.getProperty('info').c_metropolitana}</span><br>`
+ //          } else {
+ //            content += `<br>`
+ //          }
+
+ //          if(event.feature.getProperty('info').metropolitana) 
+ //            content += event.feature.getProperty('info').metropolitana
+
+ //          content += `</div>`
+ //        }
+
+ //        // Pulizia
+ //        if(event.feature.getProperty('info').pulizia || event.feature.getProperty('info').c_pulizia) {
+ //          content += `<div class="description-info"><b>Pulizia: </b>`
+ //          if(event.feature.getProperty('info').c_pulizia) {
+ //            content += `<span class="underline">${event.feature.getProperty('info').c_pulizia}</span><br>`
+ //          } else {
+ //            content += `<br>`
+ //          }
+
+ //          if(event.feature.getProperty('info').pulizia) 
+ //            content += event.feature.getProperty('info').pulizia
+
+ //          content += `</div>`
+ //        }
+
+ //        // Criminalità
+ //        if(event.feature.getProperty('info').criminalita || event.feature.getProperty('info').c_criminalita) {
+ //          content += `<div class="description-info"><b>Criminalità: </b>`
+ //          if(event.feature.getProperty('info').c_criminalita) {
+ //            content += `<span class="underline">${event.feature.getProperty('info').c_criminalita}</span><br>`
+ //          } else {
+ //            content += `<br>`
+ //          }
+
+ //          if(event.feature.getProperty('info').criminalita) 
+ //            content += event.feature.getProperty('info').criminalita
+
+ //          content += `</div>`
+ //        }
+
+ //        // Tecnologia
+ //        if(event.feature.getProperty('info').tecnologia || event.feature.getProperty('info').c_tecnologia) {
+ //          content += `<div class="description-info"><b>Livello tecnologico: </b>`
+ //          if(event.feature.getProperty('info').c_tecnologia) {
+ //            content += `<span class="underline">${event.feature.getProperty('info').c_tecnologia}</span><br>`
+ //          } else {
+ //            content += `<br>`
+ //          }
+
+ //          if(event.feature.getProperty('info').tecnologia) 
+ //            content += event.feature.getProperty('info').tecnologia
+
+ //          content += `</div>`
+ //        }
+
+ //        // Ricchezza
+ //        if(event.feature.getProperty('info').ricchezza || event.feature.getProperty('info').c_ricchezza) {
+ //          content += `<div class="description-info"><b>Ricchezza: </b>`
+ //          if(event.feature.getProperty('info').c_ricchezza) {
+ //            content += `<span class="underline">${event.feature.getProperty('info').c_ricchezza}</span><br>`
+ //          } else {
+ //            content += `<br>`
+ //          }
+
+ //          if(event.feature.getProperty('info').ricchezza) 
+ //            content += event.feature.getProperty('info').ricchezza
+
+ //          content += `</div>`
+ //        }
+
+ //        // Personalità Politiche
+ //        if(event.feature.getProperty('info').politica) {
+ //          content += `<div class="description-info"><b>Personalità politiche: </b> <br>`
+
+ //          if(event.feature.getProperty('info').politica) 
+ //            content += event.feature.getProperty('info').politica
+
+ //          content += `</div>`
+ //        }
+
+ //        // Commercio
+ //        if(event.feature.getProperty('info').commercio) {
+ //          content += `<div class="description-info"><b>Commercio: </b> <br>`
+
+ //          if(event.feature.getProperty('info').commercio) 
+ //            content += event.feature.getProperty('info').commercio
+
+ //          content += `</div>`
+ //        }
+
+ //        // Punti di Interesse
+ //        if(event.feature.getProperty('info').interesse) {
+ //          content += `<div class="description-info"><b>Punti di Interesse: </b> <br>`
+
+ //          if(event.feature.getProperty('info').interesse) 
+ //            content += `<a href="${event.feature.getProperty('info').interesse}" target="_blank">Post sul forum</a>`
+
+ //          content += `</div>`
+ //        }
+
+ //        // Curiosità
+ //        if(event.feature.getProperty('info').curiosita.length > 0) {
+ //          content += `<div class="description-info"><b>Curiosità: </b> <br>`
+          
+ //          content += `<ol>`
+ //          for(let i = 0; i < event.feature.getProperty('info').curiosita.length; i++) {
+ //            content += `<li>${event.feature.getProperty('info').curiosita[i]}</li><br>`
+ //          }
+ //          content += `</ol></div>`
+ //        }
+
+ //        content += `</div>`
+
+ //      } else if(type == "mission") {
+ //        if(event.feature.getProperty('url'))
+ //          content += `<a href="${event.feature.getProperty('url')}" target="_blank">Post sul forum</a><br><br>`
+
+ //        if(event.feature.getProperty('image')) 
+ //          content += `<div class="modal-image-container"><img class="modal-image" src="${event.feature.getProperty('image')}"/></div>`
+
+ //        content += event.feature.getProperty('description')
+      
+ //      } else if (type == "sector") {
+
+ //        content += ''
+ //      }
+
+ //      ssi_modal.show({
+ //        content: content,
+ //        sizeClass: 'small',
+ //        title: event.feature.getProperty('name'),
+ //        animation: true
+ //      }); 
+ //    }
+ //  });
+
   var styleControl = document.getElementById('style-selector-control');
-  map.controls[google.maps.ControlPosition.RIGHT_TOP].push(styleControl);
+  map.controls[google.maps.ControlPosition.LEFT_TOP].push(styleControl);
 
   controllerViewFeature.addEventListener('click', activateMarkerDisableOthers(map, controllerViewFeature))
   
@@ -373,34 +399,34 @@ function initMap() {
   activateMarkerDisableOthers(map, controllerViewFeature)()
   
 
-  styleCharactersTab.addEventListener('click', showCharacter(map))
-  addCharactersToDOM(styleCharactersTab)
+  // styleCharactersTab.addEventListener('click', showCharacter(map))
+  // addCharactersToDOM(styleCharactersTab)
 }
 
 /* 
  * DROPDOWN MENUS
  */ 
 
-let infoOpenFlag = true
-openCloseInfoButton.addEventListener('click', function() {
-  infoOpenFlag = !infoOpenFlag
-  if(infoOpenFlag) {
-    infoTab.style.display = 'flex'
-    infoOpenIcon.innerHTML = 'arrow_drop_up'
-  } else {
-    infoTab.style.display = 'none'
-    infoOpenIcon.innerHTML = 'arrow_drop_down'
-  }
-})
+// let infoOpenFlag = true
+// openCloseInfoButton.addEventListener('click', function() {
+//   infoOpenFlag = !infoOpenFlag
+//   if(infoOpenFlag) {
+//     infoTab.style.display = 'flex'
+//     infoOpenIcon.innerHTML = 'arrow_drop_up'
+//   } else {
+//     infoTab.style.display = 'none'
+//     infoOpenIcon.innerHTML = 'arrow_drop_down'
+//   }
+// })
 
-let characterOpenFlag = true
-openCloseStyleCharactersButton.addEventListener('click', function() {
-  infoOpenFlag = !infoOpenFlag
-  if(infoOpenFlag) {
-    styleCharactersTab.style.display = 'block'
-    styleCharactersOpenIcon.innerHTML = 'arrow_drop_up'
-  } else {
-    styleCharactersTab.style.display = 'none'
-    styleCharactersOpenIcon.innerHTML = 'arrow_drop_down'
-  }
-})
+// let characterOpenFlag = true
+// openCloseStyleCharactersButton.addEventListener('click', function() {
+//   infoOpenFlag = !infoOpenFlag
+//   if(infoOpenFlag) {
+//     styleCharactersTab.style.display = 'block'
+//     styleCharactersOpenIcon.innerHTML = 'arrow_drop_up'
+//   } else {
+//     styleCharactersTab.style.display = 'none'
+//     styleCharactersOpenIcon.innerHTML = 'arrow_drop_down'
+//   }
+// })
