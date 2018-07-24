@@ -169,7 +169,7 @@ function initMap() {
     toastr.remove()
     toastr.info(event.feature.getProperty('name'))
 
-    map.data.overrideStyle(event.feature, {strokeWeight: 8, fillOpacity: 0.7});
+    map.data.overrideStyle(event.feature, {strokeWeight: 4, fillOpacity: 0.7});
   }); 
 
   map.data.addListener("mouseout",function(event){

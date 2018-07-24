@@ -5,6 +5,178 @@ var cities = {
          "type":"Feature",
          "properties":{  
             "featureType":"city",
+            "name":"Base Missilistica di Galbadia",
+            "image":"",
+            "icon":"img/icons/city2.png",
+            "description":"",
+            "info":{  
+               "url":"",
+               "continente":"",
+               "superficie":"",
+               "abitanti":"",
+               "appellativo":"",
+               "c_porto":"",
+               "porto":"",
+               "c_ferrovie":"",
+               "ferrovie":"",
+               "c_aeroporto":"",
+               "aeroporto":"",
+               "c_metropolitana":"",
+               "metropolitana":"",
+               "c_pulizia":"",
+               "pulizia":"",
+               "c_criminalita":"",
+               "criminalita":"",
+               "c_tecnologia":"",
+               "tecnologia":"",
+               "politica":"",
+               "c_ricchezza":"",
+               "ricchezza":"",
+               "commercio":"",
+               "interesse":"",
+               "curiosita":[  
+
+               ]
+            }
+         },
+         "geometry":{  
+            "type":"Point",
+            "coordinates": [-107.6103515625, 67.835215545666],
+         }
+      }, 
+   		{  
+         "type":"Feature",
+         "properties":{  
+            "featureType":"city",
+            "name":"Tomba del Re Senza Nome",
+            "image":"",
+            "icon":"img/icons/city2.png",
+            "description":"",
+            "info":{  
+               "url":"",
+               "continente":"",
+               "superficie":"",
+               "abitanti":"",
+               "appellativo":"",
+               "c_porto":"",
+               "porto":"",
+               "c_ferrovie":"",
+               "ferrovie":"",
+               "c_aeroporto":"",
+               "aeroporto":"",
+               "c_metropolitana":"",
+               "metropolitana":"",
+               "c_pulizia":"",
+               "pulizia":"",
+               "c_criminalita":"",
+               "criminalita":"",
+               "c_tecnologia":"",
+               "tecnologia":"",
+               "politica":"",
+               "c_ricchezza":"",
+               "ricchezza":"",
+               "commercio":"",
+               "interesse":"",
+               "curiosita":[  
+
+               ]
+            }
+         },
+         "geometry":{  
+            "type":"Point",
+            "coordinates": [-82.11957687645736, 74.63168962165923],
+         }
+      }, 
+   		{  
+         "type":"Feature",
+         "properties":{  
+            "featureType":"city",
+            "name":"Prigione del Distretto-D",
+            "image":"",
+            "icon":"img/icons/city2.png",
+            "description":"",
+            "info":{  
+               "url":"",
+               "continente":"",
+               "superficie":"",
+               "abitanti":"",
+               "appellativo":"",
+               "c_porto":"",
+               "porto":"",
+               "c_ferrovie":"",
+               "ferrovie":"",
+               "c_aeroporto":"",
+               "aeroporto":"",
+               "c_metropolitana":"",
+               "metropolitana":"",
+               "c_pulizia":"",
+               "pulizia":"",
+               "c_criminalita":"",
+               "criminalita":"",
+               "c_tecnologia":"",
+               "tecnologia":"",
+               "politica":"",
+               "c_ricchezza":"",
+               "ricchezza":"",
+               "commercio":"",
+               "interesse":"",
+               "curiosita":[  
+
+               ]
+            }
+         },
+         "geometry":{  
+            "type":"Point",
+            "coordinates": [-94.6025390625, 64.00613086800323],
+         }
+      }, 
+   		{  
+         "type":"Feature",
+         "properties":{  
+            "featureType":"city",
+            "name":"Caverna del Fuoco",
+            "image":"",
+            "icon":"img/icons/city2.png",
+            "description":"",
+            "info":{  
+               "url":"",
+               "continente":"",
+               "superficie":"",
+               "abitanti":"",
+               "appellativo":"",
+               "c_porto":"",
+               "porto":"",
+               "c_ferrovie":"",
+               "ferrovie":"",
+               "c_aeroporto":"",
+               "aeroporto":"",
+               "c_metropolitana":"",
+               "metropolitana":"",
+               "c_pulizia":"",
+               "pulizia":"",
+               "c_criminalita":"",
+               "criminalita":"",
+               "c_tecnologia":"",
+               "tecnologia":"",
+               "politica":"",
+               "c_ricchezza":"",
+               "ricchezza":"",
+               "commercio":"",
+               "interesse":"",
+               "curiosita":[  
+
+               ]
+            }
+         },
+         "geometry":{  
+            "type":"Point",
+            "coordinates": [-8.991129501975138, 72.77933917152333],
+         }
+      }, 
+   		{  
+         "type":"Feature",
+         "properties":{  
+            "featureType":"city",
             "name":"Centro di Ricerca Sottomarino",
             "image":"",
             "icon":"img/icons/city2.png",
