@@ -143,10 +143,14 @@ function initMap() {
         break;
       case 'sector':
         var fillColor = feature.getProperty('fillColor')
-        var strokeWidth = feature.getProperty('strokeWidth')
+        var strokeWeight = feature.getProperty('strokeWeight')
+        var strokeColor = feature.getProperty('strokeColor')
+        var fillOpacity = feature.getProperty('fillOpacity')
         return {
           fillColor: fillColor,
-          strokeWeight: strokeWidth,
+          strokeWeight: strokeWeight,
+          strokeColor: strokeColor,
+          fillOpacity: fillOpacity,
           visible: visible,
         }
         break;
@@ -164,10 +168,13 @@ function initMap() {
   map.data.addListener("mouseover",function(event){
     toastr.remove()
     toastr.info(event.feature.getProperty('name'))
+
+    map.data.overrideStyle(event.feature, {strokeWeight: 8, fillOpacity: 0.7});
   }); 
 
   map.data.addListener("mouseout",function(event){
    toastr.clear()
+   map.data.revertStyle()
   });
 
 	// map.data.addListener('click', function(event) {
