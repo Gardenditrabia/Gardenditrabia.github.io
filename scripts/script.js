@@ -95,15 +95,17 @@ function initMap() {
     switch(type) {
       case 'city':
         var icon = feature.getProperty('icon')
+        var width = feature.getProperty('width') || 32
+        var height = feature.getProperty('height') || 32
         if(icon) {
           return {
             label: label,
             animation: google.maps.Animation.DROP,
             icon: {
               url: icon,
-              size: new google.maps.Size(32, 32),
+              size: new google.maps.Size(width, height),
               origin: new google.maps.Point(0, 0),
-              anchor: new google.maps.Point(16, 32)
+              anchor: new google.maps.Point(width/2, height/1.5)
             },
             visible: visible,
           }
