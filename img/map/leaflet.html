@@ -10,7 +10,7 @@
       var layer;
       function init() {
         var mapMinZoom = 0;
-        var mapMaxZoom = 4;
+        var mapMaxZoom = 6;
         var map = L.map('map', {
           maxZoom: mapMaxZoom,
           minZoom: mapMinZoom,
@@ -18,8 +18,8 @@
         }).setView([0, 0], mapMaxZoom);
         
         var mapBounds = new L.LatLngBounds(
-            map.unproject([0, 2560], mapMaxZoom),
-            map.unproject([3072, 0], mapMaxZoom));
+            map.unproject([0, 9472], mapMaxZoom),
+            map.unproject([12032, 0], mapMaxZoom));
             
         map.fitBounds(mapBounds);
         layer = L.tileLayer('{z}/{x}/{y}.png', {

@@ -32,8 +32,8 @@ toastr.options = {
 // CONFIGURATION
 // map bounds
 const mapBound = {
-  x: [1, 2, 3, 6, 12],
-  y: [1, 2 ,3 ,5 ,10]
+  x: [1, 2, 3, 6, 12, 24, 47],
+  y: [1, 2, 3, 5, 10, 19, 37]
 }
 
 // url parameters
@@ -50,8 +50,8 @@ const show = urlParams.get('show')
 
 function initMap() {
   map = new google.maps.Map(mapElement, {
-    center: (initialCoordinatesCenter)?initialCoordinatesCenter:{lat: 75, lng: -42},
-    zoom: 8,
+    center: (initialCoordinatesCenter)?initialCoordinatesCenter:{lat: 60, lng: -42},
+    zoom: 3,
     streetViewControl: false,
     mapTypeControlOptions: {
       mapTypeIds: ['trabia']
@@ -69,12 +69,11 @@ function initMap() {
         }
 
         return 'img/map' +
-            '/' + zoom + '/' + normalizedCoord.x + '/' +
-            normalizedCoord.y + '.png';
+            '/' + zoom + '/' + normalizedCoord.x + '/' + normalizedCoord.y + '.png';
     },
     tileSize: new google.maps.Size(256, 256),
-    maxZoom: 4,
-	  minZoom: 2,
+    maxZoom: 6,
+	  minZoom: 0,
 	  name: 'Trabia'
 	});
 

@@ -20,7 +20,7 @@ function getNormalizedCoord(coord, zoom) {
 }
 
 function getTileBounds(zoom) {
- 	return {x: mapBound.x[zoom], y: mapBound.x[zoom]}
+ 	return {x: mapBound.x[zoom], y: mapBound.y[zoom]}
 }
 
 function activateMarkerDisableOthers(map, controller) {
