@@ -5,6 +5,92 @@ var cities = {
          "type":"Feature",
          "properties":{  
             "featureType":"city",
+            "name":"Rovine di Centra",
+            "image":"",
+            "icon":"img/icons/city2.png",
+            "description":"",
+            "info":{  
+               "url":"",
+               "continente":"",
+               "superficie":"",
+               "abitanti":"",
+               "appellativo":"",
+               "c_porto":"",
+               "porto":"",
+               "c_ferrovie":"",
+               "ferrovie":"",
+               "c_aeroporto":"",
+               "aeroporto":"",
+               "c_metropolitana":"",
+               "metropolitana":"",
+               "c_pulizia":"",
+               "pulizia":"",
+               "c_criminalita":"",
+               "criminalita":"",
+               "c_tecnologia":"",
+               "tecnologia":"",
+               "politica":"",
+               "c_ricchezza":"",
+               "ricchezza":"",
+               "commercio":"",
+               "interesse":"",
+               "curiosita":[  
+
+               ]
+            }
+         },
+         "geometry":{  
+            "type":"Point",
+            "coordinates": [-36.564711630772706, 21.13568817959388],
+         }
+      }, 
+   		{  
+         "type":"Feature",
+         "properties":{  
+            "featureType":"city",
+            "name":"Casa di Edea",
+            "image":"",
+            "icon":"img/icons/city2.png",
+            "description":"",
+            "info":{  
+               "url":"",
+               "continente":"",
+               "superficie":"",
+               "abitanti":"",
+               "appellativo":"",
+               "c_porto":"",
+               "porto":"",
+               "c_ferrovie":"",
+               "ferrovie":"",
+               "c_aeroporto":"",
+               "aeroporto":"",
+               "c_metropolitana":"",
+               "metropolitana":"",
+               "c_pulizia":"",
+               "pulizia":"",
+               "c_criminalita":"",
+               "criminalita":"",
+               "c_tecnologia":"",
+               "tecnologia":"",
+               "politica":"",
+               "c_ricchezza":"",
+               "ricchezza":"",
+               "commercio":"",
+               "interesse":"",
+               "curiosita":[  
+
+               ]
+            }
+         },
+         "geometry":{  
+            "type":"Point",
+            "coordinates": [-68.95298173594705, 7.410068130177851],
+         }
+      }, 
+   		{  
+         "type":"Feature",
+         "properties":{  
+            "featureType":"city",
             "name":"Base Missilistica di Galbadia",
             "image":"",
             "icon":"img/icons/city2.png",
