@@ -8,11 +8,11 @@ var sectors = {
         name: "Isola di Winter",
        	fillColor: "#99C0FF",
         strokeColor: "#505151",
-        strokeWeight: "2",
+        strokeWeight: "1",
         fillOpacity: "0.4",
       },
       geometry: {
-        type: 'Polygon', 
+        type: 'Polygon',
         coordinates: [[
 					[-48.66636882031054, 81.0766350662173],
 					[-49.01793132031054, 81.23875234493752],
@@ -190,11 +190,11 @@ var sectors = {
         name: "Distesa di Solvard",
        	fillColor: "#99C0FF",
         strokeColor: "#505151",
-        strokeWeight: "2",
+        strokeWeight: "1",
         fillOpacity: "0.4",
       },
       geometry: {
-        type: 'Polygon', 
+        type: 'Polygon',
         coordinates: [[
       		[-36.47269159672271, 79.07686704950261],
 					[-37.21976190922271, 79.30758913869262],
@@ -239,11 +239,11 @@ var sectors = {
 		    name: "Penisola Eldbeak",
 		   	fillColor: "#99C0FF",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 		    	[-25.17874628422271, 79.46943522115417],
 					[-33.44046503422271, 79.38881720738013],
@@ -274,11 +274,11 @@ var sectors = {
 		    name: "Pianura Hawkwind",
 		   	fillColor: "#99C0FF",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 		    	[-24.56351190922271, 81.28575871302411],
 					[-25.17874628422271, 79.46943522115417],
@@ -326,11 +326,11 @@ var sectors = {
 		    name: "Distesa di Biket",
 		   	fillColor: "#99C0FF",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 					[-10.701436984873226, 80.86979857264025],
 					[-7.361593234873226, 80.7292736937708],
@@ -392,11 +392,11 @@ var sectors = {
 		    name: "Penisola Tollet",
 		   	fillColor: "#99C0FF",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 					[27.245134181381445, 77.76713550037213],
 		    	[27.684587306381445, 80.01205740181072],
@@ -450,11 +450,11 @@ var sectors = {
 		    name: "Penisola Jiadith",
 		   	fillColor: "#99C0FF",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 
 					[27.245134181381445, 77.76713550037213],
@@ -508,11 +508,11 @@ var sectors = {
 		    name: "Cratere di Trabia",
 		   	fillColor: "#99C0FF",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 					[9.161844265126774, 77.91167186449937],
 					[27.245134181381445, 77.76713550037213],
@@ -550,11 +550,11 @@ var sectors = {
 		    name: "Montagne Yehn",
 		   	fillColor: "#99C0FF",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 					[25.27791891324034, 74.31767399507561],
 					[23.52010641324034, 74.36511816807719],
@@ -632,11 +632,11 @@ var sectors = {
 		    name: "Pianura Mordred",
 		   	fillColor: "#fc977e",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 					[40.673511564900764, 72.54214807737746],
 					[40.058277189900764, 72.0882824755377],
@@ -705,11 +705,11 @@ var sectors = {
 		    name: "Montagne Norte",
 		   	fillColor: "#fc977e",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 		    	[12.066389443081107, 67.3836496125649],
 					[14.703108193081107, 67.78580911895918],
@@ -759,11 +759,11 @@ var sectors = {
 		    name: "Grande Lago Salato",
 		   	fillColor: "#fc977e",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 		    	[15.822771148926336, 63.81961997517091],
 					[14.064958648926336, 63.507689281074185],
@@ -788,11 +788,11 @@ var sectors = {
 		    name: "Zona urbana di Esthar City",
 		   	fillColor: "#fc977e",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 		    	[17.21661142833773, 63.87622818427596],
 		    	[25.425207947813306, 63.909400161604715],
@@ -836,11 +836,11 @@ var sectors = {
 		    name: "Gran Pianura di Esthar",
 		   	fillColor: "#fc977e",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 		    	[41.840761367550385, 67.23333397202771],
 					[42.192323867550385, 67.09690113282787],
@@ -1021,11 +1021,11 @@ var sectors = {
 		    name: "Bosco Grandidieri",
 		   	fillColor: "#fc977e",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 		    	[63.56848842397744, 66.38478442680675],
 					[64.27161342397744, 66.20812311133452],
@@ -1170,11 +1170,11 @@ var sectors = {
 		    name: "Arcipelago Funiculìfuniculà",
 		   	fillColor: "#fc977e",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 		    	[49.3410744852838, 79.04989643141202],
 					[47.4953713602838, 79.03318867183204],
@@ -1238,11 +1238,11 @@ var sectors = {
 		    name: "Isola più vicina al Paradiso",
 		   	fillColor: "#fc977e",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 		    	[59.39616930134275, 79.03903514298975],
 					[60.45085680134275, 78.95516209301634],
@@ -1273,11 +1273,11 @@ var sectors = {
 		    name: "Arcipelago Millefeuille",
 		   	fillColor: "#fc977e",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 					[70.84117837576707, 71.27591016675578],
 					[69.87438150076707, 71.66691155797538],
@@ -1329,11 +1329,11 @@ var sectors = {
 		    name: "Isola Scalamanga",
 		   	fillColor: "#fc977e",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 		    	[51.940915168885454, 44.21413370920936],
 					[53.52382974174975, 43.88908853172228],
@@ -1361,11 +1361,11 @@ var sectors = {
 		    name: "Montagne Sur",
 		   	fillColor: "#fc977e",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 		    	[21.664650594485693, 47.493199111438116],
 					[19.994728719485693, 46.835890535277706],
@@ -1412,11 +1412,11 @@ var sectors = {
 		    name: "Costa Occidentale di Esthar",
 		   	fillColor: "#fc977e",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 		    	[5.542020896462304, 49.717253106383716],
 					[5.278349021462304, 50.67371439695096],
@@ -1440,11 +1440,11 @@ var sectors = {
 		    name: "Pianura Avadan",
 		   	fillColor: "#fc977e",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 		    	[8.541392354953132, 35.3747180644791],
 					[8.453501729953132, 36.6543178655896],
@@ -1565,11 +1565,11 @@ var sectors = {
 		    name: "Arcipelago Albatros",
 		   	fillColor: "#ff0026",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 		    	[-2.1416015625, 75.75424325771498],
 					[-1.1748046875, 75.31518671916531],
@@ -1644,11 +1644,11 @@ var sectors = {
 		    name: "Montagne Guard",
 		   	fillColor: "#ff0026",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 		    	[-32.1123046875, 73.06828484362973],
 					[-32.4638671875, 73.86841340282712],
@@ -1705,11 +1705,11 @@ var sectors = {
 		    name: "Capo Rahja",
 		   	fillColor: "#ff0026",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 					[-36.5947265625, 71.90495963611674],
 					[-35.0126953125, 72.22968840776316],
@@ -1730,11 +1730,11 @@ var sectors = {
 		    name: "Pianura Arkland",
 		   	fillColor: "#ff0026",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 					[-7.4150390625, 73.32238046167188],
 					[-8.9091796875, 73.22118977310058],
@@ -1795,11 +1795,11 @@ var sectors = {
 		    name: "Coste Linar",
 		   	fillColor: "#ff0026",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 					[-25.6962890625, 71.40709116621981],
 					[-25.2568359375, 71.23821655033986],
@@ -1839,11 +1839,11 @@ var sectors = {
 		    name: "Isola Longhorn",
 		   	fillColor: "#26a515",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 		    	[-99.01988939614893, 78.3865840405428],
 					[-97.70153002114893, 78.56219137219892],
@@ -1896,11 +1896,11 @@ var sectors = {
 		    name: "Capo Holy Glory",
 		   	fillColor: "#26a515",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 		    	[-69.8173828125, 78.82221546307423],
 					[-70.1689453125, 78.97452306486873],
@@ -1942,11 +1942,11 @@ var sectors = {
 		    name: "Pianura Jespelidis",
 		   	fillColor: "#26a515",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 		    	[-72.12330543718042, 78.25222008913548],
 					[-69.39869606218042, 78.25222008913548],
@@ -2002,11 +2002,11 @@ var sectors = {
 		    name: "Penisola Margot",
 		   	fillColor: "#26a515",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 					[-65.70728981218042, 74.57951377329537],
 		    	[-68.43189918718042, 75.35443185029787],
@@ -2039,11 +2039,11 @@ var sectors = {
 		    name: "Lago Ober",
 		   	fillColor: "#26a515",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 		    	[-64.8076171875, 68.42449409884424],
 					[-63.7529296875, 68.26231784487041],
@@ -2085,11 +2085,11 @@ var sectors = {
 		    name: "Bosco Rosfall",
 		   	fillColor: "#26a515",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 		    	[-63.26637038058476, 69.0931285400878],
 					[-63.61793288058476, 69.43542312301423],
@@ -2149,11 +2149,11 @@ var sectors = {
 		    name: "Canyon Yanly",
 		   	fillColor: "#26a515",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 					[-57.09400856218042, 73.83819616265532],
 					[-62.27955543718042, 74.0085668611758],
@@ -2193,11 +2193,11 @@ var sectors = {
 		    name: "Colline Winhill Est",
 		   	fillColor: "#26a515",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 					[-69.76764590007701, 71.37904756243653],
 					[-68.27350527507701, 71.46305619579574],
@@ -2375,11 +2375,11 @@ var sectors = {
 		    name: "Spiaggia Monday",
 		   	fillColor: "#26a515",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 					[-49.64267380683765, 64.45779596134786],
 					[-49.02743943183765, 64.53348375965003],
@@ -2449,11 +2449,11 @@ var sectors = {
 		    name: "Isola Nantakhet",
 		   	fillColor: "#26a515",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 		    	[-52.36728318183765, 59.42738288185432],
 					[-52.19150193183765, 59.73886591995115],
@@ -2484,11 +2484,11 @@ var sectors = {
 		    name: "Altopiano Monterosa",
 		   	fillColor: "#26a515",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 					[-70.55866152507701, 73.94151141206875],
 					[-71.52545840007701, 73.6471709386969],
@@ -2553,11 +2553,11 @@ var sectors = {
 		    name: "Canyon Lallapalooza",
 		   	fillColor: "#26a515",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 					[-70.50053422585677, 61.21876741944203],
 					[-70.93998735085677, 61.09156195424025],
@@ -2625,11 +2625,11 @@ var sectors = {
 		    name: "Colline Yenandu",
 		   	fillColor: "#26a515",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 					[-77.92743754516744, 58.29945896266849],
 					[-76.60907817016744, 58.84934999311031],
@@ -2666,11 +2666,11 @@ var sectors = {
 		    name: "Colline Winhill Sud",
 		   	fillColor: "#26a515",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 					[-91.72626567016744, 61.00647313203029],
 					[-88.38642192016744, 59.56918349992832],
@@ -2731,11 +2731,11 @@ var sectors = {
 		    name: "Arcipelago Humphrey",
 		   	fillColor: "#26a515",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 		    	[-115.40257080945469, 54.198975537735414],
 					[-113.90843018445469, 54.557305568463484],
@@ -2806,11 +2806,11 @@ var sectors = {
 		    name: "Deserto Dingo",
 		   	fillColor: "#26a515",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 					[-84.69405849884805, 68.28627873513236],
 		    	[-84.69501567016744, 67.70220353801223],
@@ -2865,11 +2865,11 @@ var sectors = {
 		    name: "Isola più vicina all'Inferno",
 		   	fillColor: "#26a515",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 					[-153.32434570405883, 56.88884389421397],
 					[-153.85168945405883, 57.31845524855813],
@@ -2949,11 +2949,11 @@ var sectors = {
 		    name: "Arcipelago Lem",
 		   	fillColor: "#26a515",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 		    	[-134.39369436494633, 67.0774719364601],
 					[-133.25111623994633, 67.4173848294445],
@@ -3018,11 +3018,11 @@ var sectors = {
 		    name: "Gran Pianura di Galbadia",
 		   	fillColor: "#26a515",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 					[-92.6689453125, 67.56843426069878],
 					[-88.0986328125, 67.33250508129123],
@@ -3094,11 +3094,11 @@ var sectors = {
 		    name: "Penisola Gotoran",
 		   	fillColor: "#26a515",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 					[-92.73373459511492, 73.3475853481899],
 					[-93.78842209511492, 74.79389936790858],
@@ -3130,11 +3130,11 @@ var sectors = {
 		    name: "Colline Willbarn",
 		   	fillColor: "#26a515",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 					[-104.51107834511492, 72.99132595788403],
 					[-104.86264084511492, 72.78443921349341],
@@ -3176,11 +3176,11 @@ var sectors = {
 		    name: "Isola di Kyactus",
 		   	fillColor: "#6235c4",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 		    	[14.586998783125182, 13.001418163981018],
 					[12.741295658125182, 15.556440280670534],
@@ -3204,11 +3204,11 @@ var sectors = {
 		    name: "Isola Poccalajileria",
 		   	fillColor: "#6235c4",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 		    	[-85.51607481243781, 40.205165161624144],
 					[-83.31880918743781, 40.205165161624144],
@@ -3346,11 +3346,11 @@ var sectors = {
 		    name: "Penisola Nectal",
 		   	fillColor: "#6235c4",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 		    	[-25.417701467463075, 45.86415359591239],
 					[-26.384498342463075, 46.83479165063032],
@@ -3379,11 +3379,11 @@ var sectors = {
 		    name: "Cratere di Centra",
 		   	fillColor: "#6235c4",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 		    	[-63.4312732330485, 30.154296976989578],
 					[-61.8492419830485, 30.306173525780707],
@@ -3741,11 +3741,11 @@ var sectors = {
 		    name: "Pianura Serengeti",
 		   	fillColor: "#6235c4",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 					[-20.15399756142199, 30.074675077192975],
 					[-20.50556006142199, 30.52996852651277],
@@ -3861,11 +3861,11 @@ var sectors = {
 		    name: "Montagne Yohn",
 		   	fillColor: "#6235c4",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 		    	[-35.18329443642199, 15.713871023981921],
 					[-34.91962256142199, 15.035914239637322],
@@ -3937,11 +3937,11 @@ var sectors = {
 		    name: "Capo di Buona Speranza",
 		   	fillColor: "#6235c4",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 		    	[-64.67645189847309, 10.1449405697159],
 					[-67.92840502347309, 12.300054804661844],
@@ -3971,11 +3971,11 @@ var sectors = {
 		    name: "Pianura Lenan",
 		   	fillColor: "#6235c4",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 		    	[-63.30143246713908, -2.6966374837560263],
 					[-63.30143246713908, -1.6427209995311183],
@@ -4129,11 +4129,11 @@ var sectors = {
 		    name: "Pianura Lorrestan",
 		   	fillColor: "#6235c4",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 		    	[-38.82813103432204, 5.982497490893411],
 					[-37.50977165932204, 5.720199648119743],
@@ -4237,11 +4237,11 @@ var sectors = {
 		    name: "Montagne Armaggi",
 		   	fillColor: "#6235c4",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 		    	[-53.457060087179684, 0.050849459570630764],
 					[-52.77227747848406, -1.318599338661711],
@@ -4464,11 +4464,11 @@ var sectors = {
 		    name: "Penisola Shalmar",
 		   	fillColor: "#6235c4",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 		    	[4.582787886080837, -1.6232103464121834],
 					[3.703881636080837, -2.9404952306727363],
@@ -4565,11 +4565,11 @@ var sectors = {
 		    name: "Deserto Kayukbahr",
 		   	fillColor: "#6235c4",
 		    strokeColor: "#505151",
-		    strokeWeight: "2",
+		    strokeWeight: "1",
 		    fillOpacity: "0.4",
 		  },
 		  geometry: {
-		    type: 'Polygon', 
+		    type: 'Polygon',
 		    coordinates: [[
 		    	[4.7138671875, 14.352428595268384],
 					[6.2080078125, 14.182069079141128],
