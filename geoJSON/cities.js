@@ -1,17 +1,18 @@
-var cities = {  
+var cities = {
    "type":"FeatureCollection",
    "features":[
-   		{  
+   		{
          "type":"Feature",
-         "properties":{  
+         "properties":{
             "featureType":"city",
+            "color": "#0F0",
             "name":"Rovine di Centra",
             "image":"",
             "icon":"img/icons/interest.png",
             "width": 64,
             "height": 64,
             "description":"",
-            "info":{  
+            "info":{
                "url":"",
                "continente":"",
                "superficie":"",
@@ -36,27 +37,28 @@ var cities = {
                "ricchezza":"",
                "commercio":"",
                "interesse":"",
-               "curiosita":[  
+               "curiosita":[
 
                ]
             }
          },
-         "geometry":{  
+         "geometry":{
             "type":"Point",
             "coordinates": [-36.564711630772706, 21.13568817959388],
          }
-      }, 
-   		{  
+      },
+   		{
          "type":"Feature",
-         "properties":{  
+         "properties":{
             "featureType":"city",
+            "color": "#0F0",
             "name":"Casa di Edea",
             "image":"",
             "icon":"img/icons/edea.png",
             "width": 64,
             "height": 64,
             "description":"",
-            "info":{  
+            "info":{
                "url":"",
                "continente":"",
                "superficie":"",
@@ -81,27 +83,28 @@ var cities = {
                "ricchezza":"",
                "commercio":"",
                "interesse":"",
-               "curiosita":[  
+               "curiosita":[
 
                ]
             }
          },
-         "geometry":{  
+         "geometry":{
             "type":"Point",
             "coordinates": [-68.95298173594705, 7.410068130177851],
          }
-      }, 
-   		{  
+      },
+   		{
          "type":"Feature",
-         "properties":{  
+         "properties":{
             "featureType":"city",
             "name":"Base Missilistica di Galbadia",
+            "color": "#0F0",
             "image":"",
             "icon":"img/icons/interest.png",
             "width": 64,
             "height": 64,
             "description":"",
-            "info":{  
+            "info":{
                "url":"",
                "continente":"",
                "superficie":"",
@@ -126,27 +129,28 @@ var cities = {
                "ricchezza":"",
                "commercio":"",
                "interesse":"",
-               "curiosita":[  
+               "curiosita":[
 
                ]
             }
          },
-         "geometry":{  
+         "geometry":{
             "type":"Point",
             "coordinates": [-107.6103515625, 67.835215545666],
          }
-      }, 
-   		{  
+      },
+   		{
          "type":"Feature",
-         "properties":{  
+         "properties":{
             "featureType":"city",
             "name":"Tomba del Re Senza Nome",
+            "color": "#0F0",
             "image":"",
             "icon":"img/icons/interest.png",
             "width": 64,
             "height": 64,
             "description":"",
-            "info":{  
+            "info":{
                "url":"",
                "continente":"",
                "superficie":"",
@@ -171,27 +175,28 @@ var cities = {
                "ricchezza":"",
                "commercio":"",
                "interesse":"",
-               "curiosita":[  
+               "curiosita":[
 
                ]
             }
          },
-         "geometry":{  
+         "geometry":{
             "type":"Point",
             "coordinates": [-82.11957687645736, 74.63168962165923],
          }
-      }, 
-   		{  
+      },
+   		{
          "type":"Feature",
-         "properties":{  
+         "properties":{
             "featureType":"city",
             "name":"Prigione del Distretto-D",
+            "color": "#0F0",
             "image":"",
             "icon":"img/icons/interest.png",
             "width": 64,
             "height": 64,
             "description":"",
-            "info":{  
+            "info":{
                "url":"",
                "continente":"",
                "superficie":"",
@@ -216,27 +221,28 @@ var cities = {
                "ricchezza":"",
                "commercio":"",
                "interesse":"",
-               "curiosita":[  
+               "curiosita":[
 
                ]
             }
          },
-         "geometry":{  
+         "geometry":{
             "type":"Point",
             "coordinates": [-94.6025390625, 64.00613086800323],
          }
-      }, 
-   		{  
+      },
+   		{
          "type":"Feature",
-         "properties":{  
+         "properties":{
             "featureType":"city",
             "name":"Caverna del Fuoco",
+            "color": "#0F0",
             "image":"",
             "icon":"img/icons/interest.png",
             "width": 64,
             "height": 64,
             "description":"",
-            "info":{  
+            "info":{
                "url":"",
                "continente":"",
                "superficie":"",
@@ -261,27 +267,28 @@ var cities = {
                "ricchezza":"",
                "commercio":"",
                "interesse":"",
-               "curiosita":[  
+               "curiosita":[
 
                ]
             }
          },
-         "geometry":{  
+         "geometry":{
             "type":"Point",
             "coordinates": [-8.991129501975138, 72.77933917152333],
          }
-      }, 
-   		{  
+      },
+   		{
          "type":"Feature",
-         "properties":{  
+         "properties":{
             "featureType":"city",
             "name":"Centro di Ricerca Sottomarino",
+            "color": "#0F0",
             "image":"",
             "icon":"img/icons/city3.png",
             "width": 64,
             "height": 64,
             "description":"",
-            "info":{  
+            "info":{
                "url":"",
                "continente":"",
                "superficie":"",
@@ -306,27 +313,28 @@ var cities = {
                "ricchezza":"",
                "commercio":"",
                "interesse":"",
-               "curiosita":[  
+               "curiosita":[
 
                ]
             }
          },
-         "geometry":{  
+         "geometry":{
             "type":"Point",
             "coordinates": [-166.0359109948476, -10.485847189027641],
          }
-      }, 
-   		{  
+      },
+   		{
          "type":"Feature",
-         "properties":{  
+         "properties":{
             "featureType":"city",
             "name":"Zona Atterraggio D'Emergenza",
+            "color": "#0F0",
             "image":"",
             "icon":"img/icons/interest.png",
             "width": 64,
             "height": 64,
             "description":"",
-            "info":{  
+            "info":{
                "url":"",
                "continente":"",
                "superficie":"",
@@ -351,27 +359,28 @@ var cities = {
                "ricchezza":"",
                "commercio":"",
                "interesse":"",
-               "curiosita":[  
+               "curiosita":[
 
                ]
             }
          },
-         "geometry":{  
+         "geometry":{
             "type":"Point",
             "coordinates": [33.16196807376764, 30.726746111529536],
          }
-      }, 
-  	 {  
+      },
+  	 {
          "type":"Feature",
-         "properties":{  
+         "properties":{
             "featureType":"city",
             "name":"Tear's Point",
+            "color": "#0F0",
             "image":"",
             "icon":"img/icons/interest.png",
             "width": 64,
             "height": 64,
             "description":"",
-            "info":{  
+            "info":{
                "url":"",
                "continente":"",
                "superficie":"",
@@ -396,27 +405,28 @@ var cities = {
                "ricchezza":"",
                "commercio":"",
                "interesse":"",
-               "curiosita":[  
+               "curiosita":[
 
                ]
             }
          },
-         "geometry":{  
+         "geometry":{
             "type":"Point",
             "coordinates": [44.41196807376764, 44.50749163206887],
          }
-      }, 
-   		{  
+      },
+   		{
          "type":"Feature",
-         "properties":{  
+         "properties":{
             "featureType":"city",
             "name":"Lunaside",
+            "color": "#0F0",
             "image":"",
             "icon":"img/icons/interest.png",
             "width": 64,
             "height": 64,
             "description":"",
-            "info":{  
+            "info":{
                "url":"",
                "continente":"",
                "superficie":"",
@@ -441,27 +451,28 @@ var cities = {
                "ricchezza":"",
                "commercio":"",
                "interesse":"",
-               "curiosita":[  
+               "curiosita":[
 
                ]
             }
          },
-         "geometry":{  
+         "geometry":{
             "type":"Point",
             "coordinates": [54.56258319385893, 58.64198721097107],
          }
-      }, 
-   		{  
+      },
+   		{
          "type":"Feature",
-         "properties":{  
+         "properties":{
             "featureType":"city",
             "name":"Palazzo della Strega di Esthar",
+            "color": "#0F0",
             "image":"",
             "icon":"img/icons/interest.png",
             "width": 64,
             "height": 64,
             "description":"",
-            "info":{  
+            "info":{
                "url":"",
                "continente":"",
                "superficie":"",
@@ -486,27 +497,28 @@ var cities = {
                "ricchezza":"",
                "commercio":"",
                "interesse":"",
-               "curiosita":[  
+               "curiosita":[
 
                ]
             }
          },
-         "geometry":{  
+         "geometry":{
             "type":"Point",
             "coordinates": [38.01792988246166, 55.96762959549005],
          }
       },
-   		{  
+   		{
          "type":"Feature",
-         "properties":{  
+         "properties":{
             "featureType":"city",
             "name":"Laboratorio Lunatic Pandora",
+            "color": "#0F0",
             "image":"",
             "icon":"img/icons/interest.png",
             "width": 64,
             "height": 64,
             "description":"",
-            "info":{  
+            "info":{
                "url":"",
                "continente":"",
                "superficie":"",
@@ -531,19 +543,19 @@ var cities = {
                "ricchezza":"",
                "commercio":"",
                "interesse":"",
-               "curiosita":[  
+               "curiosita":[
 
                ]
             }
          },
-         "geometry":{  
+         "geometry":{
             "type":"Point",
             "coordinates": [39.196322267200344, 64.03062309605873],
          }
       },
-   		{  
+   		{
          "type":"Feature",
-         "properties":{  
+         "properties":{
             "featureType":"city",
             "name":"Villaggio degli Shumi",
             "image":"",
@@ -551,7 +563,7 @@ var cities = {
             "width": 64,
             "height": 64,
             "description":"",
-            "info":{  
+            "info":{
                "url":"",
                "continente":"",
                "superficie":"",
@@ -576,30 +588,31 @@ var cities = {
                "ricchezza":"",
                "commercio":"",
                "interesse":"",
-               "curiosita":[  
+               "curiosita":[
 
                ]
             }
          },
-         "geometry":{  
+         "geometry":{
             "type":"Point",
             "coordinates":[
-            -26.53125, 
+            -26.53125,
             83.38773470295271
           ]
          }
       },
-      {  
+      {
          "type":"Feature",
-         "properties":{  
+         "properties":{
             "featureType":"city",
             "name":"Arcadia",
+            "color": "#0F0",
             "image":"",
             "icon":"img/icons/boat.png",
             "width": 64,
             "height": 64,
             "description":"Arcadia, la Città Mobile. Popolata da poco più di un migliaio di abitanti, tutti molto facoltosi. I suoi abitanti pagano profumatamente per la manutenzione della nave, ma la vita su di essa non è altrettanto costosa.\nDopo anni di vita segregata, senza voler avere nulla a che fare con il mondo esterno, Arcadia si trova ad una svolta: la nuova Governatrice -\n Elodie Castalia - ha preso il suo posto di amica dei SeeD, suscitando scontenti tra parte dei cittadini.",
-            "info":{  
+            "info":{
                "url":"",
                "continente":"",
                "superficie":"",
@@ -624,30 +637,31 @@ var cities = {
                "ricchezza":"",
                "commercio":"",
                "interesse":"",
-               "curiosita":[  
+               "curiosita":[
 
                ]
             }
          },
-         "geometry":{  
+         "geometry":{
             "type":"Point",
-            "coordinates":[  
+            "coordinates":[
                -4.04296875,
                67.23806155909904
             ]
          }
       },
-      {  
+      {
          "type":"Feature",
-         "properties":{  
+         "properties":{
             "featureType":"city",
             "name":"Repubblica di Poccalajileria",
+            "color": "#f46b42",
             "image":"",
             "icon":"img/icons/city3.png",
             "width": 64,
             "height": 64,
             "description":"La città dell'isola Poccalajileria. Localizzata sulla Costa del Sol, è una meta turistica ambitissima dagli amanti delle spiagge di perla ed il surf. Prestigiosa città anche dal punto di vista della ristorazione e degli alberghi, la sua punta di diamante sono i casinò. Un paradiso tropicale.\n",
-            "info":{  
+            "info":{
                "url":"http://trabia.forumfree.it/?t=59368965#entry483219433",
                "continente":"Isolotto ad ovest di Centra",
                "superficie":"431 km2\n",
@@ -672,7 +686,7 @@ var cities = {
                "ricchezza":"Pochissimi ricchissimi, moltissimi poverissimi.",
                "commercio":"Esportazioni\nPetrolio, noci di cocco, caucciù, materiali plastici\n\nImportazioni\nPrevalentemente cibo",
                "interesse":"http://trabia.forumfree.it/?t=59368965#entry483219433",
-               "curiosita":[  
+               "curiosita":[
                   "Le Coste del Sol di Poccalajileria sono state a lungo la zona d'attracco favorita della nave dei SeeD Bianchi. Chiamateli scemi.",
                   "Il Colonnello Nabeshin è un grande amico dei SeeD Bianchi.",
                   "Corrono parecchie voci sui Los Hombres. Pare che Isabela sia una delle donne più spietate del mondo. Alcuna la paragonano ad Astera per le sue mire insaziabili.",
@@ -683,25 +697,26 @@ var cities = {
                ]
             }
          },
-         "geometry":{  
+         "geometry":{
             "type":"Point",
-            "coordinates":[  
+            "coordinates":[
                -90.17578125,
                31.052933985705163
             ]
          }
       },
-      {  
+      {
          "type":"Feature",
-         "properties":{  
+         "properties":{
             "featureType":"city",
             "name":"Graycott",
+            "color": "#41a9f4",
             "image":"",
             "icon":"img/icons/town2.png",
             "width": 64,
             "height": 64,
             "description":"Graycott è un piccolo villaggio situato ad ovest dei territori precedentemente sotto il controllo Wolfgang. La zona è divenuta di interesse del Garden di Trabia in seguito alla comparsa di misteriosi fenomeni meteorologici in qualche modo correlati con la presenza di una nuova sostanza instabile e radioattiva. La cittadina ed i suoi dintorni sono perennemente avvolti da una densa coltre di nebbia in cui bestiame e persone sono scomparse nel nulla.\n",
-            "info":{  
+            "info":{
                "url":"test",
                "continente":"sada ",
                "superficie":"",
@@ -718,30 +733,31 @@ var cities = {
                "ricchezza":"",
                "commercio":"",
                "interesse":"",
-               "curiosita":[  
+               "curiosita":[
 
                ]
             }
          },
-         "geometry":{  
+         "geometry":{
             "type":"Point",
-            "coordinates":[  
+            "coordinates":[
                -94.482421875,
                55.776573018668
             ]
          }
       },
-      {  
+      {
          "type":"Feature",
-         "properties":{  
+         "properties":{
             "featureType":"city",
             "name":"Queensdale",
+            "color": "#41a9f4",
             "image":"",
             "icon":"img/icons/town2.png",
             "width": 64,
             "height": 64,
             "description":"Cuore del Voivodato comandato da Testanera, Queensdale è una città fortemente industriale e tra le più avanzate dei Liberi Confini. La potenza militare dei Krovia, la posizione strategica vicino ai monti ed al mare ed il supporto di una misterioso alleato rendono la città estremamente difficile da attaccare.",
-            "info":{  
+            "info":{
                "url":"",
                "continente":"",
                "superficie":"",
@@ -758,30 +774,31 @@ var cities = {
                "ricchezza":"",
                "commercio":"",
                "interesse":"",
-               "curiosita":[  
+               "curiosita":[
 
                ]
             }
          },
-         "geometry":{  
+         "geometry":{
             "type":"Point",
-            "coordinates":[  
+            "coordinates":[
                -74.53125,
                58.722598828043
             ]
          }
       },
-      {  
+      {
          "type":"Feature",
-         "properties":{  
+         "properties":{
             "featureType":"city",
             "name":"Panteias",
+            "color": "#41a9f4",
             "image":"",
             "icon":"img/icons/town2.png",
             "width": 64,
             "height": 64,
             "description":"Capitale della Repubblica Democratica Popolare comandata dal Colonnello della Morte, Alejandro de la Muerte. Nonostante la potenza dell'esercito della Repubblica e del pugno di ferro con cui tratta con le altre forze dei Liberi Confini, la vita a Panteias per i propri cittadini sembra - a detta dei mercanti itineranti - molto confortevole. Tutti i cittadini sembrano condividere gli ideali del regime. \nAttualmente la Strega Astera si trova a Panteias.",
-            "info":{  
+            "info":{
                "url":"",
                "continente":"",
                "superficie":"",
@@ -798,30 +815,30 @@ var cities = {
                "ricchezza":"",
                "commercio":"",
                "interesse":"",
-               "curiosita":[  
+               "curiosita":[
 
                ]
             }
          },
-         "geometry":{  
+         "geometry":{
             "type":"Point",
-            "coordinates":[  
+            "coordinates":[
                -81.474609375,
                56.992882804634
             ]
          }
       },
-      {  
+      {
          "type":"Feature",
-         "properties":{  
+         "properties":{
             "featureType":"city",
             "name":"Newhall ",
-            "image":"",
+            "color": "#41a9f4",
             "icon":"img/icons/town2.png",
             "width": 64,
             "height": 64,
             "description":"In nome capitale della ex-tecnocrazia di Wolfgang, ma de facto è sempre stata in balia di se stessa. Newhall è controllata da numerosi nuclei malavitosi in costante attrito tra di loro - gli scontri armati non sono rari ed i cittadini vi convivono ormai da molto tempo. Il clima che si respira in questa città è surreale al punto da sembrare di entrare in un'altra dimensione dove l'esistenza della Strega è un problema distante.",
-            "info":{  
+            "info":{
                "url":"",
                "continente":"",
                "superficie":"",
@@ -838,30 +855,31 @@ var cities = {
                "ricchezza":"",
                "commercio":"",
                "interesse":"",
-               "curiosita":[  
+               "curiosita":[
 
                ]
             }
          },
-         "geometry":{  
+         "geometry":{
             "type":"Point",
-            "coordinates":[  
+            "coordinates":[
                -89.912109375,
                55.776573018668
             ]
          }
       },
-      {  
+      {
          "type":"Feature",
-         "properties":{  
+         "properties":{
             "featureType":"city",
             "name":"Whitefall",
+            "color": "#41a9f4",
             "image":"img/cities/whitefall.jpg",
             "icon":"img/icons/town2.png",
             "width": 64,
             "height": 64,
             "description":"Città dei Liberi Confini attualmente sotto il controllo del Garden di Trabia.",
-            "info":{  
+            "info":{
                "url":"http://trabia.forumfree.it/?t=59368965#entry539372959",
                "continente":"Galbadia, Isla Maior.",
                "superficie":"72 km2",
@@ -878,7 +896,7 @@ var cities = {
                "ricchezza":"Dopo due decenni di dittatura, sopratutto negli ultimi anni di malgoverno di Darell Harcrow, si sono formati quattro settori nella città: due di essi (il primo ed il quarto) sono flagellati dalla povertà, mentre gli altri due (il secondo ed il terzo) godono di una discreta ricchezza.",
                "commercio":"Esportazioni\nTabacco, pesci, crostacei, ferro, zucchero. perle, sale.\n\nImportazioni\nMacchine ed apparecchi elettrici e loro parti, materie plastiche, liquidi alcolici, calce e cemento, prodotti che richiedono grande industria.",
                "interesse":"",
-               "curiosita":[  
+               "curiosita":[
                   "Non esiste ne è mai esistito uno sport nazionale di Whitefall - anzi. Probabilmente è uno dei luoghi in cui si pratica meno sport del mondo.",
                   "Nonostante questo, l'intensa attività fisica a cui i residenti si sottopongono ad ogni giorno a causa del lavoro manuale sempre in abbondanza in città rende la popolazione molto normopeso.",
                   "Whitefall è l'unica città dei Liberi Confini ad essere stata costruita sulle rovine di una città antica: infatti la prima cosa che si nota guardandola da distanza è la cinta muraria che la circonda. L'unica entrata alla città è un grosso cancello con inferriate.",
@@ -896,25 +914,26 @@ var cities = {
                "c_ricchezza":"Mal distribuita"
             }
          },
-         "geometry":{  
+         "geometry":{
             "type":"Point",
-            "coordinates":[  
+            "coordinates":[
                -98.4375,
                50.064191736659
             ]
          }
       },
-      {  
+      {
          "type":"Feature",
-         "properties":{  
+         "properties":{
             "featureType":"city",
             "name":"Garden di Balamb",
+            "color": "#f4ce42",
             "image":"",
             "icon":"img/icons/garden2.png",
             "width": 64,
             "height": 64,
             "description":" Fondato da Cid Kramer, è il primo Garden ad essere stato istituito con lo scopo di sconfiggere e salvare la Strega Edea. In seguito è diventato la fonte di ispirazione che hanno portato alla creazione dei Garden di Galbadia e Trabia. E' il Garden da cui provengono gli Eroi SeeD e quello con la maggior rateo di SeeD d'élite. Dopo la sconfitta ottenuta nel tentativo di eradicare la Strega Astera da Dollet, il Garden di Balamb ha chiuso le iscrizioni al fine di migliorare l'addestramento dei SeeD già presenti diventando a tutti gli effetti un'accademia ancora più elitaria.",
-            "info":{  
+            "info":{
                "url":"",
                "continente":"",
                "superficie":"",
@@ -931,30 +950,31 @@ var cities = {
                "ricchezza":"",
                "commercio":"",
                "interesse":"",
-               "curiosita":[  
+               "curiosita":[
 
                ]
             }
          },
-         "geometry":{  
+         "geometry":{
             "type":"Point",
-            "coordinates":[  
+            "coordinates":[
                -15.380859375,
                73.327858098407
             ]
          }
       },
-      {  
+      {
          "type":"Feature",
-         "properties":{  
+         "properties":{
             "featureType":"city",
             "name":"Balamb Town",
+            "color": "#f46b42",
             "image":"img/cities/balamb.jpg",
             "icon":"img/icons/city3.png",
             "width": 64,
             "height": 64,
             "description":"Città marittima di grande importanza anche e sopratutto per la vicinanza con il prestigioso Garden di Balamb e, per questo, da molti considerata la città più sicura al mondo.",
-            "info":{  
+            "info":{
                "url":"http://trabia.forumfree.it/?t=59368965#entry483359142",
                "continente":"Balamb",
                "superficie":"354 km^2",
@@ -971,7 +991,7 @@ var cities = {
                "ricchezza":"Il tenore di vita è abbastanza buono e omogeneo fra la popolazione.",
                "commercio":"Esportazioni\nPesce, crostacei, molluschi, frutta, sale, stoffe, corallo, legno e materiali navali.\n\nImportazioni\nProdotti tecnologici, materiali plastici e componenti elettronici.",
                "interesse":"http://trabia.forumfree.it/?t=59368965#entry483359142",
-               "curiosita":[  
+               "curiosita":[
                   "In passato, era un protettorato dell'Impero di Dollet, ma divenne poi autonoma, pacifica e tranquilla.",
                   "Il pesce di Balamb è il più buono del mondo.",
                   "Sempre in tematica di pesce, a Balamb ci sono due specie in particolare che sono davvero ghiotte e prelibate: il pesce dalle scaglie turchesi e il pesce Badamb.",
@@ -990,25 +1010,26 @@ var cities = {
                "c_ricchezza":"Ben Distribuita, media"
             }
          },
-         "geometry":{  
+         "geometry":{
             "type":"Point",
-            "coordinates":[  
+            "coordinates":[
                -32.607421875,
                71.580531795565
             ]
          }
       },
-      {  
+      {
          "type":"Feature",
-         "properties":{  
+         "properties":{
             "featureType":"city",
             "name":"Dollet",
+            "color": "#f46b42",
             "image":"",
             "icon":"img/icons/city3.png",
             "width": 64,
             "height": 64,
             "description":"Capitale del fu Impero di Dollet che in antichità si estendeva su tutto il continente di Galbadia. Attualmente è il centro del potere della Strega Astera. Tutte le comunicazioni in entrata ed in uscita dalla città sono bloccate da misteriosi fenomeni magici che interferiscono anche sulle immagini satellitari.  ",
-            "info":{  
+            "info":{
                "url":"",
                "continente":"",
                "superficie":"",
@@ -1025,30 +1046,31 @@ var cities = {
                "ricchezza":"",
                "commercio":"",
                "interesse":"",
-               "curiosita":[  
+               "curiosita":[
 
                ]
             }
          },
-         "geometry":{  
+         "geometry":{
             "type":"Point",
-            "coordinates":[  
+            "coordinates":[
                -55.283203125,
                75.650430997466
             ]
          }
       },
-      {  
+      {
          "type":"Feature",
-         "properties":{  
+         "properties":{
             "featureType":"city",
             "name":"Timber",
+            "color": "#f46b42",
             "image":"img/cities/timber.jpg",
             "icon":"img/icons/city3.png",
             "width": 64,
             "height": 64,
             "description":"Timber è un polo ferroviario di rilevanza fondamentale - dalla sua stazione partono treni che raggiungono tutte le principali città mondiali. La sua importanza ha attratto in passato le brame di conquista di più di una Strega.",
-            "info":{  
+            "info":{
                "url":"http://trabia.forumfree.it/?t=59368965#entry483386747",
                "continente":"Galbadia",
                "superficie":"306,64 km2",
@@ -1065,7 +1087,7 @@ var cities = {
                "ricchezza":"A Timber o si è ricchi o si è poveri. Non c'è una via di mezzo.",
                "commercio":"Esportazioni\nProdotti metallurgici, attrezzature industriali, legni pregiati e mobili di superba fattura. I prefabbricati in legno più solidi del mondo vengono da qui.\n\nImportazioni\nPrincipalmente tecnologia Esthariana, specialité culinarie provenienti da ogni parte del globo ed energia da Fisherman's Horizon.\n",
                "interesse":"http://trabia.forumfree.it/?t=59368965#entry483386747",
-               "curiosita":[  
+               "curiosita":[
                   "Il Sindaco Clarke è l'unico della sua famiglia a non essere diventato un boscaiolo. Nonostante ciò, possiede tutte le caratteristiche fisiche del più classico dei taglialegna: robusto, con una folta barba ed un'innata passione per l'alcool.",
                   "Le malelingue dicono che a Timber piova sempre.",
                   "La specialità più prelibata della cucina Timberiana è l'Haggis di Grat. Si tratta delle interiora del mostro bollite ed insaccate nella sua stessa cavità corporea, macinate assieme a spezie Galbadiane. Il piatto viene servito su un letto di patate, ed'è generalmente per otto o più persone.",
@@ -1082,25 +1104,26 @@ var cities = {
                "c_ricchezza":"Mal distribuita"
             }
          },
-         "geometry":{  
+         "geometry":{
             "type":"Point",
-            "coordinates":[  
+            "coordinates":[
                -61.611328125,
                62.633769607868
             ]
          }
       },
-      {  
+      {
          "type":"Feature",
-         "properties":{  
+         "properties":{
             "featureType":"city",
             "name":"Trabia Town",
+            "color": "#f46b42",
             "image":"img/cities/trabia.jpg",
             "icon":"img/icons/city3.png",
             "width": 64,
             "height": 64,
             "description":"La fondazione della città, che risale a pochi anni dopo la fine della guerra della Strega Artemisia, ha causato la sparizione e l'incorporazione di numerosi piccoli centri abitati del continente di Trabia. Attualmente la città è un forte polo economico con molte possibilità di lavoro ed in cui la ricchezza è equamente distribuita tra la popolazione.",
-            "info":{  
+            "info":{
                "url":"http://trabia.forumfree.it?t=59368965#entry483188314",
                "continente":"Trabia",
                "superficie":"414,5 km²",
@@ -1117,7 +1140,7 @@ var cities = {
                "ricchezza":"Il ceto predominante è quello medio. Esiste un equilibrio tra ricchi e poveri.",
                "commercio":"Esportazioni\nPesci, crostacei, alluminio, ferro, prodotti farmaceutici, perle, pietre preziose.\n\nImportazioni\nMacchine ed apparecchi elettrici e loro parti, automobili, materie plastiche e lavori, bevande, liquidi alcolici ed aceti, Sale, zolfo, terre e pietre, gessi, calce e cemento, frutta commestibile.",
                "interesse":"http://trabia.forumfree.it/?t=50591585#entry415293830",
-               "curiosita":[  
+               "curiosita":[
                   "Il sindaco Jones di Trabia Town, predecessore di Merrick, è morto avvelenato durante un ricevimento grazie ai SeeD del Garden di Trabia.",
                   "Trabia Town è stata fondata nello stesso periodo di Gracemeria.",
                   "La popolazione di Trabia Town discende prevalentemente dagli antichi popoli del Nord, etnia facilmente riconoscibile per il candore della pelle, le membra robuste ed i capelli scuri.",
@@ -1136,25 +1159,26 @@ var cities = {
                "c_ricchezza":"Ben distribuita"
             }
          },
-         "geometry":{  
+         "geometry":{
             "type":"Point",
-            "coordinates":[  
+            "coordinates":[
                -17.9296875,
                80.238500546354
             ]
          }
       },
-      {  
+      {
          "type":"Feature",
-         "properties":{  
+         "properties":{
             "featureType":"city",
             "name":"Garden di Trabia",
+            "color": "#f4ce42",
             "image":"",
             "icon":"img/icons/garden2.png",
             "width": 64,
             "height": 64,
             "description":"Dopo la sconfitta della Strega Artemisia è stata messa in moto una macchina economica per ricostruire il Garden di Trabia precedentemente distrutto dal famoso attacco missilistico da parte di Galbadia ai suoi danni. Il progetto - nato da Balamb e promosso dalla stessa Galbadia - ha messo nelle mani di Hector Mayer la nuova accademia SeeD. Alla sua morte, i figli Heimmerich ed Emily hanno preso le redini del Garden e portando avanti la guerra dei suoi SeeD - i Liberi Fatali - contro la Strega Astera. ",
-            "info":{  
+            "info":{
                "url":"",
                "continente":"",
                "superficie":"",
@@ -1171,30 +1195,31 @@ var cities = {
                "ricchezza":"",
                "commercio":"",
                "interesse":"",
-               "curiosita":[  
+               "curiosita":[
 
                ]
             }
          },
-         "geometry":{  
+         "geometry":{
             "type":"Point",
-            "coordinates":[  
+            "coordinates":[
                -21.62109375,
                80.732348546483
             ]
          }
       },
-      {  
+      {
          "type":"Feature",
-         "properties":{  
+         "properties":{
             "featureType":"city",
             "name":"Fisherman's Horizon",
+            "color": "#f46b42",
             "image":"img/cities/fisherman.jpg",
             "icon":"img/icons/city3.png",
             "width": 64,
             "height": 64,
             "description":"Questa città - che si trova al centro del grande ponte che collega i continenti di Esthar e Galbadia - è stata fondata durante il periodo di sviluppo di Esthar City da un gruppo di ingegneri che, insoddisfatti delle proprie condizioni lavorative, hanno deciso di lasciare la città. Si tratta di una città pacifica, neutrale, che non ha mai subito direttamente i fuochi della guerra.",
-            "info":{  
+            "info":{
                "url":"http://trabia.forumfree.it/?t=59368965#entry483334252",
                "continente":"Al centro esatto del mondo",
                "superficie":"431 km2",
@@ -1211,7 +1236,7 @@ var cities = {
                "ricchezza":"Nessun ricco benestante vivrebbe mai a FH. Troppo solitaria. Troppo squallida, forse. Ma per il ceto medio basso e per i geni incompresi, FH è un porto sicuro.",
                "commercio":"Esportazioni\nEnergia idroelettrica\n\nImportazioni\nQuasi tutto",
                "interesse":"http://trabia.forumfree.it/?t=59368965#entry483334252",
-               "curiosita":[  
+               "curiosita":[
                   "Qualcuno disse \"Forse non lo leggerai sui libri, ma Fisherman's Horizon è fatto della stessa pasta dei sogni. Io lo so. Io c'ero.\"",
                   "Dobe Jr non ha un cognome noto.",
                   "E' possibile pescare un pesce molto speciale a Fisherman's Horizon...",
@@ -1230,25 +1255,26 @@ var cities = {
                "c_ricchezza":"Omogenea"
             }
          },
-         "geometry":{  
+         "geometry":{
             "type":"Point",
-            "coordinates":[  
+            "coordinates":[
                -19.072265625,
                62.79493487887
             ]
          }
       },
-      {  
+      {
          "type":"Feature",
-         "properties":{  
+         "properties":{
             "featureType":"city",
             "name":"Esthar City",
+            "color": "#f46b42",
             "image":"",
             "icon":"img/icons/city3.png",
             "width": 64,
             "height": 64,
             "description":"Leggenda vuole che questa città sia stata fondata dagli esuli di Centra riusciti a fuggire dal Pianto Lunare dello 0 P.L.C. Questa città è il più importante polo tecnologico mondiale ed è, insieme alle forze di Dollet e della Strega Astera, la più grande superpotenza mondiale. Esthar City è stata protagonista di numerose guerre ed eventi politici passati, ed attualmente segue una politica anti-Strega supportando, quando le è possibile, gli sforzi dei Garden per contrastare l'avanzata di Astera.",
-            "info":{  
+            "info":{
                "url":"http://trabia.forumfree.it/?t=59368965#entry483208953",
                "continente":"Esthar",
                "superficie":"2.223 Km2",
@@ -1265,7 +1291,7 @@ var cities = {
                "ricchezza":"Piuttosto omogenea, esiste un grande equilibrio tra persone ricche e povere.",
                "commercio":"Esportazioni\nInnovazioni tecnologiche, tecnologie varie.\n\nImportazioni\nPiante e fiori.",
                "interesse":"http://trabia.forumfree.it/?t=59368965#entry483208953",
-               "curiosita":[  
+               "curiosita":[
                   "Non vedrai mai e poi mai crescere una pianta ad Esthar. E' scientificamente impossibile che ciò succeda.",
                   "Il 50% circa dei lavoratori è impiegato presso il settore di ricerca della città. Vi aspettavate qualcosa di diverso?",
                   "Il servizio di Rent-a-car può esser usato solo per noleggiare un auto ed usarla all'interno della città ma non sarà mai possibile usarle per andarne al di fuori.",
@@ -1284,25 +1310,26 @@ var cities = {
                "c_ricchezza":"Ben distribuita"
             }
          },
-         "geometry":{  
+         "geometry":{
             "type":"Point",
-            "coordinates":[  
+            "coordinates":[
                17.40234375,
                57.844750992891
             ]
          }
       },
-      {  
+      {
          "type":"Feature",
-         "properties":{  
+         "properties":{
             "featureType":"city",
             "name":"Gracemeria",
+            "color": "#f46b42",
             "image":"",
             "icon":"img/icons/city3.png",
             "width": 64,
             "height": 64,
             "description":"   Città di recente fondazione come Trabia Town, si tratta di un progetto internazionale per la ri-colonizzazione del continente di Centra. Gli aiuti economici e tecnologici di Esthar City hanno reso esponenziale la sua crescita trasformandola in una città estremamente all'avanguardia. In seguito al colpo di stato del 102 PLC è caduta in mano alla Strega Aura ed ai suoi Cavalieri della Tavola Rotonda.",
-            "info":{  
+            "info":{
                "url":"http://trabia.forumfree.it/?t=59368965#entry483770748",
                "continente":"Centra",
                "superficie":"1.200 km2",
@@ -1319,7 +1346,7 @@ var cities = {
                "ricchezza":"Gracemeria è divisa in quertieri, diversi dei quali sono definibili per persone ricche. Ma nonostante questo, sia la politica interna che la natura di coloro che si trasferiscono a Gracemeria sono tali da dare a chiunque la possibilità di raggiungere un certo tenore di vita. La città è ricca ed ancora in evoluzione; c'è spazio per tutti.",
                "commercio":"Esportazioni\nPesce, prodotti tecnologici, energia.\n\nImportazioni\nFrutta, verdura, grano.",
                "interesse":"http://trabia.forumfree.it/?t=59368965#entry483770748",
-               "curiosita":[  
+               "curiosita":[
                   "Dal golpe della Tavola Rotonda in poi, Gracemeria è stata chiusa al turismo. Sono regolarmente attivi tutti i traffici commerciali, ma nessuno senza salvacondotto può entrare a Gracemeria. Ogni cittadino di Gracemeria può uscire dalla città e rientrarvi, ma per ogni spostamento di questo genere deve informare il ministero dell'interno della città.",
                   "I membri della Bregan d'Aerthe si sono integrati perfettamente nell'ambiente cittadino di Gracemeria. Ognuno di essi frequenta dai tre ai quattro locali come clienti abituali.",
                   "Sembra che il cane sia l'animale preferito dagli abitanti di Gracemeria. Una statistica ha rivelato che il 74% delle famiglie con più di tre membri possiede almeno un cane.",
@@ -1336,25 +1363,26 @@ var cities = {
                "c_ricchezza":"Ben distribuita"
             }
          },
-         "geometry":{  
+         "geometry":{
             "type":"Point",
-            "coordinates":[  
+            "coordinates":[
                3.603515625,
                -2.1088986592431
             ]
          }
       },
-      {  
+      {
          "type":"Feature",
-         "properties":{  
+         "properties":{
             "featureType":"city",
             "name":"Lindblum",
+            "color": "#f46b42",
             "image":"",
             "icon":"img/icons/city3.png",
             "width": 64,
             "height": 64,
             "description":"Città di spicco nel periodo precedente alla guerra di Artemisia, Lindblum è una città marittima che fa fatica a rimanere al passo dei tempi con il resto della regione. E' stato un importante porto e punto di scalo per i rifornimenti balistici, grazie anche alla minera di damasco qui presente.\n\n<br><br><b style=\"color:green\">Quartiere Verde:</b> Zona malfamata di Lindblum, non è molto sicura. Il World is Mine è situato qui. Prende il nome dalla grande quantità di verde presente in essa.\n<br><b style=\"color:blue\">Quartiere Blu:</b> Zona eliporto e stazione dei treni. Presenta numerosi mezzi di locomozione quali bus ed è inoltre possibile noleggiare auto.\n<br><b style=\"color:purple\">Quartiere Viola:</b> Zona vecchia di Lindblum, dove è situata l'associazione storica e dove ogni sabato viene organizzato il mercato cittadino.\n<br><b style=\"color:cyan\">Quartiere Azzurro:</b> Zona situata vicino il centrocittà, è carica di negozi e negozietti per l'artigianato locale ed è dove i giovani di Lindblum comprano i loro vestiti.\n<br><b style=\"color:orange\">Quartiere Arancione:</b> Zona con il centro commerciale di Lindblum e svariati edifici amministrativi. Non sono molti, ma è la parte più ricca della città.\n<br><b style=\"color:red\">Quartiere Rosso:</b> Zona piazza, dove ci sono le rovine della Torre dell'Orologio.\n<br><b style=\"color:black\">Quartiere Nero:</b> Zona porto.",
-            "info":{  
+            "info":{
                "url":"http://trabia.forumfree.it/?t=59368965#entry613543997",
                "continente":"Sud del Continente Esthariano\n",
                "superficie":"231,6 km2",
@@ -1371,7 +1399,7 @@ var cities = {
                "ricchezza":"La disparità tra i quartieri è notevole, ne è un lampante esempio l'impennata di criminalità nel quartiere verde rispetto a tutti gli altri. Il quartiere azzurro - che corrisponde al centrocittà - è molto più ricco rispetto agli altri.",
                "commercio":"Esportazioni\nDamasco, pietre preziose, pesce, prodotti sartoriali.\n\nImportazioni\nTecnologia.",
                "interesse":"http://trabia.forumfree.it/?t=59368965#entry613543997",
-               "curiosita":[  
+               "curiosita":[
                   "La divisione in quartieri per nome dei colori è presente sin da prima della guerra d'Artemisia.",
                   "C'è un'aspra competizione tra la giunta comunale ed il comitato di ricostruzione della città.",
                   "La città ricopriva un ruolo fondamentale nella guerra d'Artemisia come scalo commerciale."
@@ -1386,25 +1414,26 @@ var cities = {
                "c_ricchezza":"Mal distribuita"
             }
          },
-         "geometry":{  
+         "geometry":{
             "type":"Point",
-            "coordinates":[  
+            "coordinates":[
                23.73046875,
                31.503629305773
             ]
          }
       },
-      {  
+      {
          "type":"Feature",
-         "properties":{  
+         "properties":{
             "featureType":"city",
             "name":"Cittadella Perduta di Cleyra",
+            "color": "#0F0",
             "image":"",
             "icon":"img/icons/interest.png",
             "width": 64,
             "height": 64,
             "description":"  Avvolta in un tornado di sabbia che sembra non esaurirsi mai c'è una città. Gli strumenti dei velivoli vanno spesso in tilt quando si sorvola questa zona; è impossibile penetrare all'interno della perturbazione. Tuttavia, ci sono dicerie di viandanti che sono riusciti a vedere le meraviglie che si nascondono al suo interno.",
-            "info":{  
+            "info":{
                "url":"",
                "continente":"",
                "superficie":"",
@@ -1421,30 +1450,31 @@ var cities = {
                "ricchezza":"",
                "commercio":"",
                "interesse":"",
-               "curiosita":[  
+               "curiosita":[
 
                ]
             }
          },
-         "geometry":{  
+         "geometry":{
             "type":"Point",
-            "coordinates":[  
+            "coordinates":[
                -100.458984375,
                63.782486031165
             ]
          }
       },
-      {  
+      {
          "type":"Feature",
-         "properties":{  
+         "properties":{
             "featureType":"city",
             "name":"Winhill",
+            "color": "#41a9f4",
             "image":"img/cities/winhill.jpg",
             "icon":"img/icons/town2.png",
             "width": 64,
             "height": 64,
             "description":"Clicca per accedere alla pagina sul sito</a>  Piccola cittadina recentemente entrata nel conflitto dei Liberi Confini di Galbadia. E' stata vittima di diversi attacchi da parte della fazione di Wolfgang - ed è riuscita a difendersi grazie all'intervento del Cavalierato del Nuovo Ordine (C.N.O.) E' famosa per l'importanza che ha avuto nella vita di Laguna Loire, l'attuale Presidente di Esthar City e padre dell'eroe Squall Leonhart e per i numerosi allevamenti di Chocobo. ",
-            "info":{  
+            "info":{
                "url":"http://trabia.forumfree.it/?t=59368965#entry483195261",
                "continente":"Galbadia",
                "superficie":"22 km²",
@@ -1461,7 +1491,7 @@ var cities = {
                "ricchezza":"Piuttosto omogenea, grazie ai frutti della terra",
                "commercio":"Esportazioni\nGrandi quantità di frutta e verdura BIO. Molti stagionali prendono parte ai periodi di semina e raccolta.\n\nImportazioni\nQuasi tutto il resto, dalla tecnologia ai prodotti che richiedono una grande industria.\n",
                "interesse":"http://trabia.forumfree.it/?t=59368965#entry483195261",
-               "curiosita":[  
+               "curiosita":[
                   "Sapevate che Winhill ha una casa infestata da fantasmi?",
                   "Thaddeus Lovelace è un amante della buona tavola. Per colpa sua, alla magione, hanno dovuto allargare le porte.",
                   "Thaddeus e Clementina hanno oltre quindici figli sparsi per tutto il mondo. Sono tutti (o quasi) estremamente corpulenti.",
@@ -1477,25 +1507,26 @@ var cities = {
                "c_ricchezza":"Ben Distribuita, Media"
             }
          },
-         "geometry":{  
+         "geometry":{
             "type":"Point",
-            "coordinates":[  
+            "coordinates":[
                -94.04296875,
                58.170702483486
             ]
          }
       },
-      {  
+      {
          "type":"Feature",
-         "properties":{  
+         "properties":{
             "featureType":"city",
             "name":"Deling City",
+            "color": "#f46b42",
             "image":"",
             "icon":"img/icons/city3.png",
             "width": 64,
             "height": 64,
             "description":"  Capitale dello stato di Galbadia, Deling City è una città antica e ricca di storia. E' il cuore pulsante della regione galbadiana ed è per questo che durante gli anni in cui è rimasta conquistata prima dalla strega Artemisia e poi dalla strega Astera il continente ne ha sofferto molto. E' famosa la sua università, per le singole condizioni climatiche che la rendono perennemente coperta di nubi, e per i monumenti antichi.",
-            "info":{  
+            "info":{
                "url":"",
                "continente":"",
                "superficie":"",
@@ -1512,30 +1543,31 @@ var cities = {
                "ricchezza":"",
                "commercio":"",
                "interesse":"",
-               "curiosita":[  
+               "curiosita":[
 
                ]
             }
          },
-         "geometry":{  
+         "geometry":{
             "type":"Point",
-            "coordinates":[  
+            "coordinates":[
                -100.810546875,
                73.124945247127
             ]
          }
       },
-      {  
+      {
          "type":"Feature",
-         "properties":{  
+         "properties":{
             "featureType":"city",
+            "color": "#f4ce42",
             "name":"Garden di Galbadia",
             "image":"",
             "icon":"img/icons/garden2.png",
             "width": 64,
             "height": 64,
             "description":"  Accademia dei SeeD Galbadiani la cui preside è attualmente Fujin, il comandante Frank Beast, ed il capitano Ted Hawkins. Insieme al Garden di Balamb si è messo in prima fila per la ricostruzione di quello di Trabia. Tutti i SeeD galbadiani hanno sofferto molto la guerra tanto di Artemisia quanto di Astera - il che li ha portati a considerare la soluzione estrema di avvalersi del Lunatic Pandora per bombardare Dollet, intento che è sfociato nella guerra tra Garden chiamata Lunawar. Dopo aver ristabilito i rapporti diplomatici, il Garden di Galbadia ha iniziato grandi collaborazioni con quello di Trabia per far procedere la guerra contro la Strega.",
-            "info":{  
+            "info":{
                "url":"",
                "continente":"",
                "superficie":"",
@@ -1552,14 +1584,14 @@ var cities = {
                "ricchezza":"",
                "commercio":"",
                "interesse":"",
-               "curiosita":[  
+               "curiosita":[
 
                ]
             }
          },
-         "geometry":{  
+         "geometry":{
             "type":"Point",
-            "coordinates":[  
+            "coordinates":[
                -77.16796875,
                72.1009436001
             ]

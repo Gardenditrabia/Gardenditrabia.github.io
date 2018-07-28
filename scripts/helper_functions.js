@@ -25,7 +25,7 @@ function getTileBounds(zoom) {
 
 function activateMarkerDisableOthers(map, controller) {
   return function(){
-    const inputs = controller.getElementsByTagName('input') 
+    const inputs = controller.getElementsByTagName('input')
     const typeToShow = []
     for(let i = 0; i < inputs.length; i++) {
       if(inputs[i].checked) {

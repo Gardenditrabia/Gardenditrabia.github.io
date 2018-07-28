@@ -37,7 +37,7 @@ const mapBound = {
 }
 
 // url parameters
-const urlParams = new URLSearchParams(window.location.search) 
+const urlParams = new URLSearchParams(window.location.search)
 const center = urlParams.get('center')
 let initialCoordinatesCenter = undefined
 if(center) {
@@ -47,6 +47,17 @@ if(center) {
   initialCoordinatesCenter.lat = parseFloat(lngLat[1])
 }
 const show = urlParams.get('show')
+
+function pinSymbol(color) {
+    return {
+        path: 'M 0,0 C -2,-20 -10,-22 -10,-30 A 10,10 0 1,1 10,-30 C 10,-22 2,-20 0,0 z M -2,-30 a 2,2 0 1,1 4,0 2,2 0 1,1 -4,0',
+        fillColor: color,
+        fillOpacity: 1,
+        strokeColor: '#000',
+        strokeWeight: 2,
+        scale: 1,
+   };
+}
 
 function initMap() {
   map = new google.maps.Map(mapElement, {
@@ -81,14 +92,14 @@ function initMap() {
 	map.setMapTypeId('Trabia');
 
 	google.maps.event.addListener(map, 'click', function( event ){
-  	console.log('[' + event.latLng.lng() + ", " + event.latLng.lat() + '],'); 
+  	console.log('[' + event.latLng.lng() + ", " + event.latLng.lat() + '],');
 	});
 
 	map.data.setStyle(function(feature) {
     let type = feature.getProperty('featureType')
     let label = feature.getProperty('label')
     let visible = feature.getProperty('active')
-        
+
     // For custom icons, API here:
     // https://developers.google.com/chart/infographics/docs/dynamic_icons?csw=1#pins
     switch(type) {
@@ -96,15 +107,20 @@ function initMap() {
         var icon = feature.getProperty('icon')
         var width = feature.getProperty('width') || 32
         var height = feature.getProperty('height') || 32
+        var color = feature.getProperty('color') || '#FFF'
+        console.log(color)
         if(icon) {
           return {
             label: label,
-            animation: google.maps.Animation.DROP,
+            // animation: google.maps.Animation.DROP,
+            flat: true,
+            // icon: pinSymbol(color),
             icon: {
               url: icon,
               size: new google.maps.Size(width, height),
               origin: new google.maps.Point(0, 0),
-              anchor: new google.maps.Point(width/2, height/1.5)
+              anchor: new google.maps.Point(16, 16),
+              scaledSize: new google.maps.Size(32, 32),
             },
             visible: visible,
           }
@@ -129,7 +145,7 @@ function initMap() {
           visible: visible,
         }
         break;
-      case 'mission': 
+      case 'mission':
         var icon = feature.getProperty('icon')
         var fillColor = feature.getProperty('fillColor')
         var starFill = feature.getProperty('starFill')
@@ -138,7 +154,7 @@ function initMap() {
           icon: {
           //   anchor: new google.maps.Point(0,0),
             url: "https://chart.googleapis.com/chart?chst=d_map_xpin_icon&chld=pin_star|" + icon + "|" + fillColor + "|" + starFill
-          },   
+          },
           visible: visible,
         }
         break;
@@ -171,7 +187,7 @@ function initMap() {
     toastr.info(event.feature.getProperty('name'))
 
     map.data.overrideStyle(event.feature, {strokeWeight: 4, fillOpacity: 0.7});
-  }); 
+  });
 
   map.data.addListener("mouseout",function(event){
    toastr.clear()
@@ -188,7 +204,7 @@ function initMap() {
  //        if(event.feature.getProperty('info').url)
  //          content += `<a href="${event.feature.getProperty('info').url}" target="_blank">Post sul forum</a><br><br>`
 
- //        if(event.feature.getProperty('image')) 
+ //        if(event.feature.getProperty('image'))
  //          content += `<div class="modal-image-container"><img class="modal-image" src="${event.feature.getProperty('image')}"/></div>`
 
  //        content += event.feature.getProperty('description')
@@ -221,7 +237,7 @@ function initMap() {
  //            content += `<br>`
  //          }
 
- //          if(event.feature.getProperty('info').porto) 
+ //          if(event.feature.getProperty('info').porto)
  //            content += event.feature.getProperty('info').porto
 
  //          content += `</div>`
@@ -236,7 +252,7 @@ function initMap() {
  //            content += `<br>`
  //          }
 
- //          if(event.feature.getProperty('info').ferrovie) 
+ //          if(event.feature.getProperty('info').ferrovie)
  //            content += event.feature.getProperty('info').ferrovie
 
  //          content += `</div>`
@@ -251,7 +267,7 @@ function initMap() {
  //            content += `<br>`
  //          }
 
- //          if(event.feature.getProperty('info').aeroporto) 
+ //          if(event.feature.getProperty('info').aeroporto)
  //            content += event.feature.getProperty('info').aeroporto
 
  //          content += `</div>`
@@ -266,7 +282,7 @@ function initMap() {
  //            content += `<br>`
  //          }
 
- //          if(event.feature.getProperty('info').metropolitana) 
+ //          if(event.feature.getProperty('info').metropolitana)
  //            content += event.feature.getProperty('info').metropolitana
 
  //          content += `</div>`
@@ -281,7 +297,7 @@ function initMap() {
  //            content += `<br>`
  //          }
 
- //          if(event.feature.getProperty('info').pulizia) 
+ //          if(event.feature.getProperty('info').pulizia)
  //            content += event.feature.getProperty('info').pulizia
 
  //          content += `</div>`
@@ -296,7 +312,7 @@ function initMap() {
  //            content += `<br>`
  //          }
 
- //          if(event.feature.getProperty('info').criminalita) 
+ //          if(event.feature.getProperty('info').criminalita)
  //            content += event.feature.getProperty('info').criminalita
 
  //          content += `</div>`
@@ -311,7 +327,7 @@ function initMap() {
  //            content += `<br>`
  //          }
 
- //          if(event.feature.getProperty('info').tecnologia) 
+ //          if(event.feature.getProperty('info').tecnologia)
  //            content += event.feature.getProperty('info').tecnologia
 
  //          content += `</div>`
@@ -326,7 +342,7 @@ function initMap() {
  //            content += `<br>`
  //          }
 
- //          if(event.feature.getProperty('info').ricchezza) 
+ //          if(event.feature.getProperty('info').ricchezza)
  //            content += event.feature.getProperty('info').ricchezza
 
  //          content += `</div>`
@@ -336,7 +352,7 @@ function initMap() {
  //        if(event.feature.getProperty('info').politica) {
  //          content += `<div class="description-info"><b>Personalità politiche: </b> <br>`
 
- //          if(event.feature.getProperty('info').politica) 
+ //          if(event.feature.getProperty('info').politica)
  //            content += event.feature.getProperty('info').politica
 
  //          content += `</div>`
@@ -346,7 +362,7 @@ function initMap() {
  //        if(event.feature.getProperty('info').commercio) {
  //          content += `<div class="description-info"><b>Commercio: </b> <br>`
 
- //          if(event.feature.getProperty('info').commercio) 
+ //          if(event.feature.getProperty('info').commercio)
  //            content += event.feature.getProperty('info').commercio
 
  //          content += `</div>`
@@ -356,7 +372,7 @@ function initMap() {
  //        if(event.feature.getProperty('info').interesse) {
  //          content += `<div class="description-info"><b>Punti di Interesse: </b> <br>`
 
- //          if(event.feature.getProperty('info').interesse) 
+ //          if(event.feature.getProperty('info').interesse)
  //            content += `<a href="${event.feature.getProperty('info').interesse}" target="_blank">Post sul forum</a>`
 
  //          content += `</div>`
@@ -365,7 +381,7 @@ function initMap() {
  //        // Curiosità
  //        if(event.feature.getProperty('info').curiosita.length > 0) {
  //          content += `<div class="description-info"><b>Curiosità: </b> <br>`
-          
+
  //          content += `<ol>`
  //          for(let i = 0; i < event.feature.getProperty('info').curiosita.length; i++) {
  //            content += `<li>${event.feature.getProperty('info').curiosita[i]}</li><br>`
@@ -379,11 +395,11 @@ function initMap() {
  //        if(event.feature.getProperty('url'))
  //          content += `<a href="${event.feature.getProperty('url')}" target="_blank">Post sul forum</a><br><br>`
 
- //        if(event.feature.getProperty('image')) 
+ //        if(event.feature.getProperty('image'))
  //          content += `<div class="modal-image-container"><img class="modal-image" src="${event.feature.getProperty('image')}"/></div>`
 
  //        content += event.feature.getProperty('description')
-      
+
  //      } else if (type == "sector") {
 
  //        content += ''
@@ -394,7 +410,7 @@ function initMap() {
  //        sizeClass: 'small',
  //        title: event.feature.getProperty('name'),
  //        animation: true
- //      }); 
+ //      });
  //    }
  //  });
 
@@ -402,18 +418,18 @@ function initMap() {
   map.controls[google.maps.ControlPosition.LEFT_TOP].push(styleControl);
 
   controllerViewFeature.addEventListener('click', activateMarkerDisableOthers(map, controllerViewFeature))
-  
+
   // default seen features
   activateMarkerDisableOthers(map, controllerViewFeature)()
-  
+
 
   // styleCharactersTab.addEventListener('click', showCharacter(map))
   // addCharactersToDOM(styleCharactersTab)
 }
 
-/* 
+/*
  * DROPDOWN MENUS
- */ 
+ */
 
 // let infoOpenFlag = true
 // openCloseInfoButton.addEventListener('click', function() {
