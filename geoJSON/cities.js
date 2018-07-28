@@ -1564,7 +1564,7 @@ var cities = {
                72.1009436001
             ]
          }
-      }
+      },
       {  
          "type":"Feature",
          "properties":{  
