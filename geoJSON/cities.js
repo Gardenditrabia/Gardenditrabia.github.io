@@ -1565,5 +1565,53 @@ var cities = {
             ]
          }
       }
+      {  
+         "type":"Feature",
+         "properties":{  
+            "featureType":"city",
+            "name":"Milfuille",
+            "image":"",
+            "icon":"img/icons/city3.png",
+            "width": 64,
+            "height": 64,
+            "description":"La città arcipelago. È un piccolo gioiello d'oriente, famoso in tutto il mondo per i pregiati pesci che esporta da che il commercio ha memoria.<br/>Per noi SeeD, invece, è il più vicino centro urbano di medie dimensioni entro una discreta distanza dal Lunagate. Da quando il TILMITT è stato rimesso in funzione, tale elemento ha acquisito ancor più importanza.<br/>Si trova nella giurisdizione della città di Esthar, ed è la grande città tecnologica che si occupa in larga misura della sua sicurezza, sia militare che civile. Nonostante questo, gode di uno statuto di autonomia tale per cui il suo territorio (vale a dire l'intero arcipelago, più alcune decine di chilometri di costa) è considerato neutrale ed indipendente. Anche per questo costituisce un importante risorsa per il Garden di Trabia e la città di Esthar: è la porta sull'oceano che separa il continente esthariano dalle coste di Deling.<br/>In accordo e rispetto con la neutralità ed il municipio della città, nono sono state schierate guarnigioni SeeD permanenti, ma il luogo offre spesso attracco e scalo temporaneo alle navi ed ai velivoli di tutti i Garden, soprattutto del nostro.",
+            "info":{  
+               "url":"https://trabia.forumfree.it/?t=59368965#entry623149487",
+               "continente":"Esthar",
+               "superficie":"324 km2 (di cui circa 250 km2 sono di oceano)",
+               "abitanti":"1.224.134 c.a. (circa 400.000 sulle tre isole principali - gli altri sulle isole minori, o in alcuni piccoli paesi sulla terraferma, lungo la costa)",
+               "appellativo":"",
+               "c_porto":"Sì",
+               "c_ferrovie":"Sì",
+               "c_aeroporto":"Sì",
+               "c_metropolitana":"No",
+               "c_pulizia":"No",
+               "c_criminalita":"Nascosta",
+               "c_tecnologia":"Alto",
+               "c_ricchezza":"Parzialmente distribuita",
+               "porto":"I porti di questa città sono i suoi polmoni. Ogni singola isola dell'arcipelago possiede un porto civile almeno di medie dimensioni, ed una di queste è adibita proprio a cantiere navale, mentre sull'isola principale ci sono sufficienti attracchi per decine di navi anche di grandi dimensioni. Seppur non si tratti di un porto militare, è comunque in grado di offrire riparo (e rifornimenti esclusivamente non bellici) anche a navi da guerra.",
+               "ferrovie":"La città è collegata alla rete ferroviaria sotterranea che collega l'intero mondo. La stazione si trova vicino al porto di Milfuille City, così da permettere un collegamento diretto anche con le altre isole dell'arcipelago. Una monorotaia collega le tre isole principali, permettendo facili spostamenti.",
+               "aeroporto":"Un'intera isola minore è adibita ad aeroporto. Non è in grado di sostenere ampie flotte: è utilizzato soprattutto per piccoli voli di collegamento con Esthar, oppure per velivoli privati. In ogni caso, il traffico principale (persino quello turistico) passa per il porto e la ferrovia.",
+               "metropolitana":"",
+               "pulizia":"La città è molto pulita. Le strade sono ben tenute, così che l'unico odore che si può sentire è il profumo del mare. I porti adibiti alla pesca sono quasi parte della tradizione e fiore all'occhiello della Milfuille commerciale/culinaria, e per questo sono tenuti in maniera impeccabile. Sulle isole più grandi ci sono alberghi, ristoranti e strutture turistiche per tutti i gusti, e l'igiene è tenuto in alta considerazione. Purtroppo le zone industriali non sempre godono di questa eccellenza, e le strette vie possono risultare anche squallide e bagnate, non avendo possibilità di asciugare appieno.",
+               "criminalita":"A volte avvengono fatti di cronaca nera, ma sono spesso riguardanti la zona industriale. Milfuille è rinomata per essere una località turistica relativamente sicura. I turisti possono sentirsi relativamente al sicuro, persino in alcune isole esterne adibite a villaggio turistico, dove gli ospiti lasciano le loro cose nelle loro capanne, nemmeno provviste di porte.<br/>Nella città principale c'è il sospetto che giri qualche mazzetta di più di quanto dovrebbe, ma non è chiaro. La maggior parte degli abitanti vive comunque bene, e questo status quo è apprezzato, anche se fosse sostenuto da qualche movimento leggermente fuori schema.",
+               "tecnologia":"Giovando della vicinanza con Esthar City, la città si è sviluppata molto rapidamente. È certamente una città che può andare orgogliosa della propria modernità, soprattutto nelle aree più ricche. Alcuni palazzi si ergono sull'isola principale, e tra di essi anche alcuni alti grattacieli dalle ampie vetrate sempre perfettamente pulite, nonostante la vicinanza al mare, ben descrivono la qualità tecnica di questo luogo.<br/>Nonostante la disponibilità tecnologica, svariati quartieri sono comunque mantenuti in uno stile tradizionale. Non perché impossibilitati a crescere, ma così hanno scelto. Anche nel più modesto grotto a conduzione familiare è comunque possibile trovare un televisore ultramoderno o un lussuoso bagno con idromassaggio. Tutto dipende, spesso, da cosa il proprietario desideri offrire ai suoi clienti: il comfort, la tradizione, o altro.<br/>Per quanto riguarda gli abitanti, le case dei residenti non sono così avanzate, ma sono sicuramente piacevoli, non molto diverse da quelle di Trabia Town - ma in versione costiera.",
+               "politica":"Democrazia municipale affiancata, con persino un suo partito in governo, da una compagnia commerciale di nome 'Compagnia delle Vele Orientali'",
+               "ricchezza":"È ben distribuita nel senso che la maggior parte della popolazione vive bene, inclusi, in fondo, coloro che vivono nella zona industriale. Vi sono tuttavia alcune personalità che dispongono di ampie risorse economiche, così come alcuni quartieri piuttosto lugubri.",
+               "commercio":"<strong>Esportazioni:</strong> Pesce, cucina e turismo. Le industrie si occupano anche di produzione e vendita di navi di ogni dimensione e funzione.<br/><strong>Importazioni:</strong> Cibo, metallo. Pur essendo potenzialmente autosufficiente grazie all'enorme quantità di pesce prodotta, la città dipende molto anche dall'importazione di generi alimentari di altro tipo. L'industria, sull'altro fronte, è in stretto rapporto con regioni e fornitori di metalli e materie prime, come il Ramo d'Inverno",
+               "interesse":"Milfuille copre un totale di 8 isole, ognuna collegata ad ognuna altra tramite traghetti e barche-taxi. Le tre isole principali hanno le dimensioni, circa, di una piccola cittadina l'una, e tutte e tre assieme fanno il territorio di una media città.",
+               "curiosita":[  
+
+               ]
+            }
+         },
+         "geometry":{  
+            "type":"Point",
+            "coordinates":[  
+               -77.16796875,
+               72.1009436001
+            ]
+         }
+      }
    ]
 }
