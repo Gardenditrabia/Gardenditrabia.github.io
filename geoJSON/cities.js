@@ -1422,47 +1422,47 @@ var cities = {
       //       ]
       //    }
       // },
-      {
-         "type":"Feature",
-         "properties":{
-            "featureType":"city",
-            "name":"Cittadella Perduta di Cleyra",
-            "color": "#0F0",
-            "image":"",
-            "icon":"img/icons/interest.png",
-            "width": 64,
-            "height": 64,
-            "description":"  Avvolta in un tornado di sabbia che sembra non esaurirsi mai c'è una città. Gli strumenti dei velivoli vanno spesso in tilt quando si sorvola questa zona; è impossibile penetrare all'interno della perturbazione. Tuttavia, ci sono dicerie di viandanti che sono riusciti a vedere le meraviglie che si nascondono al suo interno.",
-            "info":{
-               "url":"",
-               "continente":"",
-               "superficie":"",
-               "abitanti":"",
-               "appellativo":"",
-               "porto":"",
-               "ferrovie":"",
-               "aeroporto":"",
-               "metropolitana":"",
-               "pulizia":"",
-               "criminalita":"",
-               "tecnologia":"",
-               "politica":"",
-               "ricchezza":"",
-               "commercio":"",
-               "interesse":"",
-               "curiosita":[
-
-               ]
-            }
-         },
-         "geometry":{
-            "type":"Point",
-            "coordinates":[
-               -100.458984375,
-               63.782486031165
-            ]
-         }
-      },
+      // {
+      //    "type":"Feature",
+      //    "properties":{
+      //       "featureType":"city",
+      //       "name":"Cittadella Perduta di Cleyra",
+      //       "color": "#0F0",
+      //       "image":"",
+      //       "icon":"img/icons/interest.png",
+      //       "width": 64,
+      //       "height": 64,
+      //       "description":"  Avvolta in un tornado di sabbia che sembra non esaurirsi mai c'è una città. Gli strumenti dei velivoli vanno spesso in tilt quando si sorvola questa zona; è impossibile penetrare all'interno della perturbazione. Tuttavia, ci sono dicerie di viandanti che sono riusciti a vedere le meraviglie che si nascondono al suo interno.",
+      //       "info":{
+      //          "url":"",
+      //          "continente":"",
+      //          "superficie":"",
+      //          "abitanti":"",
+      //          "appellativo":"",
+      //          "porto":"",
+      //          "ferrovie":"",
+      //          "aeroporto":"",
+      //          "metropolitana":"",
+      //          "pulizia":"",
+      //          "criminalita":"",
+      //          "tecnologia":"",
+      //          "politica":"",
+      //          "ricchezza":"",
+      //          "commercio":"",
+      //          "interesse":"",
+      //          "curiosita":[
+      //
+      //          ]
+      //       }
+      //    },
+      //    "geometry":{
+      //       "type":"Point",
+      //       "coordinates":[
+      //          -100.458984375,
+      //          63.782486031165
+      //       ]
+      //    }
+      // },
       {
          "type":"Feature",
          "properties":{
