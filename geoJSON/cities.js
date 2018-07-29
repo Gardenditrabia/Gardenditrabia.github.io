@@ -1371,57 +1371,57 @@ var cities = {
             ]
          }
       },
-      {
-         "type":"Feature",
-         "properties":{
-            "featureType":"city",
-            "name":"Lindblum",
-            "color": "#f46b42",
-            "image":"",
-            "icon":"img/icons/city3.png",
-            "width": 64,
-            "height": 64,
-            "description":"Città di spicco nel periodo precedente alla guerra di Artemisia, Lindblum è una città marittima che fa fatica a rimanere al passo dei tempi con il resto della regione. E' stato un importante porto e punto di scalo per i rifornimenti balistici, grazie anche alla minera di damasco qui presente.\n\n<br><br><b style=\"color:green\">Quartiere Verde:</b> Zona malfamata di Lindblum, non è molto sicura. Il World is Mine è situato qui. Prende il nome dalla grande quantità di verde presente in essa.\n<br><b style=\"color:blue\">Quartiere Blu:</b> Zona eliporto e stazione dei treni. Presenta numerosi mezzi di locomozione quali bus ed è inoltre possibile noleggiare auto.\n<br><b style=\"color:purple\">Quartiere Viola:</b> Zona vecchia di Lindblum, dove è situata l'associazione storica e dove ogni sabato viene organizzato il mercato cittadino.\n<br><b style=\"color:cyan\">Quartiere Azzurro:</b> Zona situata vicino il centrocittà, è carica di negozi e negozietti per l'artigianato locale ed è dove i giovani di Lindblum comprano i loro vestiti.\n<br><b style=\"color:orange\">Quartiere Arancione:</b> Zona con il centro commerciale di Lindblum e svariati edifici amministrativi. Non sono molti, ma è la parte più ricca della città.\n<br><b style=\"color:red\">Quartiere Rosso:</b> Zona piazza, dove ci sono le rovine della Torre dell'Orologio.\n<br><b style=\"color:black\">Quartiere Nero:</b> Zona porto.",
-            "info":{
-               "url":"http://trabia.forumfree.it/?t=59368965#entry613543997",
-               "continente":"Sud del Continente Esthariano\n",
-               "superficie":"231,6 km2",
-               "abitanti":"800.000 c.a.",
-               "appellativo":"",
-               "porto":"Il porto di Lindblum è strettamente commerciale, a causa della sua posizione vantaggiosa per tutti i carichi diretti alla città centrale di Esthar. Sebbene non sia profondamente all'avanguardia.",
-               "ferrovie":"La ferrovia è il principale mezzo di locomozione da e per Lindblum, escludendo i velivoli. Facilmente collegata al cuore del continente, i treni che arrivano sino a questa cittadina sono tuttavia regionali molto lenti a causa della scarsa manutenzione sulla linea.",
-               "aeroporto":"Non è presente un vero e proprio aeroporto quanto un Eliporto, studiato appositamente per gli elicotteri di stampo militare come Trythos e simili. Molto più all'avanguardia di Ferrovia e Porto, è uno snodo fondamentale per il commercio di Damasco con i Garden.\n",
-               "metropolitana":"",
-               "pulizia":"Nonostante la sua natura di città storica, Lindblum pecca in manutenzione e pulizia della zona; alcuni quartieri sono particolarmente fatiscenti e/o in rovina, come la zona del porto.",
-               "criminalita":"Lindblum è vittima del dominio della Mafia di Esthar, che richiede quotidianamente tangenti e corrompe funzionari politici. Le radici di questo male sono arrivate ad infiltrarsi sin nella polizia e negli organi più influenti.",
-               "tecnologia":"La tecnologia è arrivata molto in ritardo a Lindblum, che è stata costretta a rallentare molto per ricostruire parte della città dopo i bombardamenti subiti nelle precedenti guerre. E' attualmente in ripresa, ma c'è molto da lavorare.",
-               "politica":"- Sindaco Timothy King - Di recente elezione, il sindaco Timothy è un ex-miliardario che è salito al potere dopo i tumulti dovuti alla Catastrofe. Attualmente, si vocifera sia una delle cose migliori accadute alla città tutta.\n\n- Michela Kyuririn - Capo dell'associazione storica di Lindblum, ha agganci all'interno del consiglio comunale. Si occupa di preservare l'identità storica del posto.\n\n- Himitsu Keisatsu - E' un gruppo di \"supereroi\" che si assicurano che la legge venga rispettata in città, nascondendosi dietro maschere che celano la loro identità.\n",
-               "ricchezza":"La disparità tra i quartieri è notevole, ne è un lampante esempio l'impennata di criminalità nel quartiere verde rispetto a tutti gli altri. Il quartiere azzurro - che corrisponde al centrocittà - è molto più ricco rispetto agli altri.",
-               "commercio":"Esportazioni\nDamasco, pietre preziose, pesce, prodotti sartoriali.\n\nImportazioni\nTecnologia.",
-               "interesse":"http://trabia.forumfree.it/?t=59368965#entry613543997",
-               "curiosita":[
-                  "La divisione in quartieri per nome dei colori è presente sin da prima della guerra d'Artemisia.",
-                  "C'è un'aspra competizione tra la giunta comunale ed il comitato di ricostruzione della città.",
-                  "La città ricopriva un ruolo fondamentale nella guerra d'Artemisia come scalo commerciale."
-               ],
-               "c_porto":"Sì",
-               "c_ferrovie":"Sì",
-               "c_aeroporto":"Sì",
-               "c_metropolitana":"No",
-               "c_pulizia":"No",
-               "c_criminalita":"Organizzata",
-               "c_tecnologia":"Basso",
-               "c_ricchezza":"Mal distribuita"
-            }
-         },
-         "geometry":{
-            "type":"Point",
-            "coordinates":[
-               23.73046875,
-               31.503629305773
-            ]
-         }
-      },
+      // {
+      //    "type":"Feature",
+      //    "properties":{
+      //       "featureType":"city",
+      //       "name":"Lindblum",
+      //       "color": "#f46b42",
+      //       "image":"",
+      //       "icon":"img/icons/city3.png",
+      //       "width": 64,
+      //       "height": 64,
+      //       "description":"Città di spicco nel periodo precedente alla guerra di Artemisia, Lindblum è una città marittima che fa fatica a rimanere al passo dei tempi con il resto della regione. E' stato un importante porto e punto di scalo per i rifornimenti balistici, grazie anche alla minera di damasco qui presente.\n\n<br><br><b style=\"color:green\">Quartiere Verde:</b> Zona malfamata di Lindblum, non è molto sicura. Il World is Mine è situato qui. Prende il nome dalla grande quantità di verde presente in essa.\n<br><b style=\"color:blue\">Quartiere Blu:</b> Zona eliporto e stazione dei treni. Presenta numerosi mezzi di locomozione quali bus ed è inoltre possibile noleggiare auto.\n<br><b style=\"color:purple\">Quartiere Viola:</b> Zona vecchia di Lindblum, dove è situata l'associazione storica e dove ogni sabato viene organizzato il mercato cittadino.\n<br><b style=\"color:cyan\">Quartiere Azzurro:</b> Zona situata vicino il centrocittà, è carica di negozi e negozietti per l'artigianato locale ed è dove i giovani di Lindblum comprano i loro vestiti.\n<br><b style=\"color:orange\">Quartiere Arancione:</b> Zona con il centro commerciale di Lindblum e svariati edifici amministrativi. Non sono molti, ma è la parte più ricca della città.\n<br><b style=\"color:red\">Quartiere Rosso:</b> Zona piazza, dove ci sono le rovine della Torre dell'Orologio.\n<br><b style=\"color:black\">Quartiere Nero:</b> Zona porto.",
+      //       "info":{
+      //          "url":"http://trabia.forumfree.it/?t=59368965#entry613543997",
+      //          "continente":"Sud del Continente Esthariano\n",
+      //          "superficie":"231,6 km2",
+      //          "abitanti":"800.000 c.a.",
+      //          "appellativo":"",
+      //          "porto":"Il porto di Lindblum è strettamente commerciale, a causa della sua posizione vantaggiosa per tutti i carichi diretti alla città centrale di Esthar. Sebbene non sia profondamente all'avanguardia.",
+      //          "ferrovie":"La ferrovia è il principale mezzo di locomozione da e per Lindblum, escludendo i velivoli. Facilmente collegata al cuore del continente, i treni che arrivano sino a questa cittadina sono tuttavia regionali molto lenti a causa della scarsa manutenzione sulla linea.",
+      //          "aeroporto":"Non è presente un vero e proprio aeroporto quanto un Eliporto, studiato appositamente per gli elicotteri di stampo militare come Trythos e simili. Molto più all'avanguardia di Ferrovia e Porto, è uno snodo fondamentale per il commercio di Damasco con i Garden.\n",
+      //          "metropolitana":"",
+      //          "pulizia":"Nonostante la sua natura di città storica, Lindblum pecca in manutenzione e pulizia della zona; alcuni quartieri sono particolarmente fatiscenti e/o in rovina, come la zona del porto.",
+      //          "criminalita":"Lindblum è vittima del dominio della Mafia di Esthar, che richiede quotidianamente tangenti e corrompe funzionari politici. Le radici di questo male sono arrivate ad infiltrarsi sin nella polizia e negli organi più influenti.",
+      //          "tecnologia":"La tecnologia è arrivata molto in ritardo a Lindblum, che è stata costretta a rallentare molto per ricostruire parte della città dopo i bombardamenti subiti nelle precedenti guerre. E' attualmente in ripresa, ma c'è molto da lavorare.",
+      //          "politica":"- Sindaco Timothy King - Di recente elezione, il sindaco Timothy è un ex-miliardario che è salito al potere dopo i tumulti dovuti alla Catastrofe. Attualmente, si vocifera sia una delle cose migliori accadute alla città tutta.\n\n- Michela Kyuririn - Capo dell'associazione storica di Lindblum, ha agganci all'interno del consiglio comunale. Si occupa di preservare l'identità storica del posto.\n\n- Himitsu Keisatsu - E' un gruppo di \"supereroi\" che si assicurano che la legge venga rispettata in città, nascondendosi dietro maschere che celano la loro identità.\n",
+      //          "ricchezza":"La disparità tra i quartieri è notevole, ne è un lampante esempio l'impennata di criminalità nel quartiere verde rispetto a tutti gli altri. Il quartiere azzurro - che corrisponde al centrocittà - è molto più ricco rispetto agli altri.",
+      //          "commercio":"Esportazioni\nDamasco, pietre preziose, pesce, prodotti sartoriali.\n\nImportazioni\nTecnologia.",
+      //          "interesse":"http://trabia.forumfree.it/?t=59368965#entry613543997",
+      //          "curiosita":[
+      //             "La divisione in quartieri per nome dei colori è presente sin da prima della guerra d'Artemisia.",
+      //             "C'è un'aspra competizione tra la giunta comunale ed il comitato di ricostruzione della città.",
+      //             "La città ricopriva un ruolo fondamentale nella guerra d'Artemisia come scalo commerciale."
+      //          ],
+      //          "c_porto":"Sì",
+      //          "c_ferrovie":"Sì",
+      //          "c_aeroporto":"Sì",
+      //          "c_metropolitana":"No",
+      //          "c_pulizia":"No",
+      //          "c_criminalita":"Organizzata",
+      //          "c_tecnologia":"Basso",
+      //          "c_ricchezza":"Mal distribuita"
+      //       }
+      //    },
+      //    "geometry":{
+      //       "type":"Point",
+      //       "coordinates":[
+      //          23.73046875,
+      //          31.503629305773
+      //       ]
+      //    }
+      // },
       {
          "type":"Feature",
          "properties":{
@@ -1597,17 +1597,18 @@ var cities = {
             ]
          }
       },
-      {  
+      {
          "type":"Feature",
-         "properties":{  
+         "properties":{
             "featureType":"city",
             "name":"Milfuille",
+            "color": "#f46b42",
             "image":"",
             "icon":"img/icons/city3.png",
             "width": 64,
             "height": 64,
             "description":"La città arcipelago. È un piccolo gioiello d'oriente, famoso in tutto il mondo per i pregiati pesci che esporta da che il commercio ha memoria.<br/>Per noi SeeD, invece, è il più vicino centro urbano di medie dimensioni entro una discreta distanza dal Lunagate. Da quando il TILMITT è stato rimesso in funzione, tale elemento ha acquisito ancor più importanza.<br/>Si trova nella giurisdizione della città di Esthar, ed è la grande città tecnologica che si occupa in larga misura della sua sicurezza, sia militare che civile. Nonostante questo, gode di uno statuto di autonomia tale per cui il suo territorio (vale a dire l'intero arcipelago, più alcune decine di chilometri di costa) è considerato neutrale ed indipendente. Anche per questo costituisce un importante risorsa per il Garden di Trabia e la città di Esthar: è la porta sull'oceano che separa il continente esthariano dalle coste di Deling.<br/>In accordo e rispetto con la neutralità ed il municipio della città, nono sono state schierate guarnigioni SeeD permanenti, ma il luogo offre spesso attracco e scalo temporaneo alle navi ed ai velivoli di tutti i Garden, soprattutto del nostro.",
-            "info":{  
+            "info":{
                "url":"https://trabia.forumfree.it/?t=59368965#entry623149487",
                "continente":"Esthar",
                "superficie":"324 km2 (di cui circa 250 km2 sono di oceano)",
@@ -1632,16 +1633,14 @@ var cities = {
                "ricchezza":"È ben distribuita nel senso che la maggior parte della popolazione vive bene, inclusi, in fondo, coloro che vivono nella zona industriale. Vi sono tuttavia alcune personalità che dispongono di ampie risorse economiche, così come alcuni quartieri piuttosto lugubri.",
                "commercio":"<strong>Esportazioni:</strong> Pesce, cucina e turismo. Le industrie si occupano anche di produzione e vendita di navi di ogni dimensione e funzione.<br/><strong>Importazioni:</strong> Cibo, metallo. Pur essendo potenzialmente autosufficiente grazie all'enorme quantità di pesce prodotta, la città dipende molto anche dall'importazione di generi alimentari di altro tipo. L'industria, sull'altro fronte, è in stretto rapporto con regioni e fornitori di metalli e materie prime, come il Ramo d'Inverno",
                "interesse":"Milfuille copre un totale di 8 isole, ognuna collegata ad ognuna altra tramite traghetti e barche-taxi. Le tre isole principali hanno le dimensioni, circa, di una piccola cittadina l'una, e tutte e tre assieme fanno il territorio di una media città.",
-               "curiosita":[  
-
-               ]
+               "curiosita":[]
             }
          },
-         "geometry":{  
+         "geometry":{
             "type":"Point",
-            "coordinates":[  
-               72.10298546136619,
-               66.89057461808966
+            "coordinates":[
+               -77.16796875,
+               72.1009436001
             ]
          }
       }
