@@ -108,7 +108,7 @@ function initMap() {
         var width = feature.getProperty('width') || 32
         var height = feature.getProperty('height') || 32
         var color = feature.getProperty('color') || '#FFF'
-        console.log(color)
+        // console.log(color)
         if(icon) {
           return {
             label: label,
