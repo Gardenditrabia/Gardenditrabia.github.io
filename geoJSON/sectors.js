@@ -1018,7 +1018,7 @@ var sectors = {
 		  type: 'Feature',
 		  properties: {
 		    featureType: "sector",
-		    name: "Bosco Grandidieri",
+		    name: "Bosco Grandid",
 		   	fillColor: "#fc977e",
 		    strokeColor: "#505151",
 		    strokeWeight: "1",
