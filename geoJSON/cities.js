@@ -1685,5 +1685,44 @@ var cities = {
             ]
          }
       },
+
+      {
+         "type":"Feature",
+         "properties":{
+            "featureType":"city",
+            "color": "#f4ce42",
+            "name":"Rovine di VEKTORIA",
+            "image":"",
+            "icon":"img/icons/interest.png",
+            "width": 64,
+            "height": 64,
+            "description": "",
+            "info":{
+               "url":"",
+               "continente":"",
+               "superficie":"",
+               "abitanti":"",
+               "appellativo":"",
+               "porto":"",
+               "ferrovie":"",
+               "aeroporto":"",
+               "metropolitana":"",
+               "pulizia":"",
+               "criminalita":"",
+               "tecnologia":"",
+               "politica":"",
+               "ricchezza":"",
+               "commercio":"",
+               "interesse":"",
+               "curiosita":[
+
+               ]
+            }
+         },
+         "geometry":{
+            "type":"Point",
+            "coordinates": [8.80078125, 79.75810950569752],
+         }
+      },
    ]
 }
