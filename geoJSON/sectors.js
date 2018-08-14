@@ -1270,7 +1270,7 @@ var sectors = {
 		  type: 'Feature',
 		  properties: {
 		    featureType: "sector",
-		    name: "Arcipelago Millefeuille",
+		    name: "Arcipelago Milfuille",
 		   	fillColor: "#fc977e",
 		    strokeColor: "#505151",
 		    strokeWeight: "1",
