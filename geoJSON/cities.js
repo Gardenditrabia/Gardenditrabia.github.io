@@ -1643,6 +1643,47 @@ var cities = {
               66.89057461808966
             ]
          }
-      }
+      },
+      {
+         "type":"Feature",
+         "properties":{
+            "featureType":"city",
+            "color": "#f4ce42",
+            "name":"Consorzio Tecnomeccanico DARPA",
+            "image":"",
+            "icon":"img/icons/interest.png",
+            "width": 64,
+            "height": 64,
+            "description": "",
+            "info":{
+               "url":"",
+               "continente":"",
+               "superficie":"",
+               "abitanti":"",
+               "appellativo":"",
+               "porto":"",
+               "ferrovie":"",
+               "aeroporto":"",
+               "metropolitana":"",
+               "pulizia":"",
+               "criminalita":"",
+               "tecnologia":"",
+               "politica":"",
+               "ricchezza":"",
+               "commercio":"",
+               "interesse":"",
+               "curiosita":[
+
+               ]
+            }
+         },
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+              20.804857844933736,
+              21.521725348665218
+            ]
+         }
+      },
    ]
 }
